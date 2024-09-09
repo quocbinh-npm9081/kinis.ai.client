@@ -10,7 +10,7 @@ const MapSection = () => {
         <Title paddingTop="12" paddingBottom="7" title="Fall Prevalence Among Older Adults and <br/> Distribution of Prevention Clinics" subtitle=" in the United States (2020)"/>
         <div className="flex w-full h-full items-center justify-center relative pt-8">
            <div className="relative w-5/6 h-full">
-                <Image className="object-fill" src="/images/US Map.png" alt="Map" fill={true} />
+                <Image className="object-fill" src="/images/US Map.png" alt="Map" width={1273} height={820} />
            </div>
            <div className="w-1/6 h-full flex items-end justify-end">
                 <div className="flex flex-col gap-2 pb-36">

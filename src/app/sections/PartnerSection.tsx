@@ -54,13 +54,13 @@ const PartnerSection = () => {
         </div>
         {/* QUOTE */}
         <div className="flex w-full h-1/2 items-center justify-center relative py-8">
-            <div className="flex z-20 w-4/5">
+            <div className="flex items-center justify-center z-20 w-4/5 mx-auto">
                 <div className="flex items-start justify-center"> 
                     <Image className="object-cover" alt="text_open" src="/images/text_open.png" width={50} height={50}  />
                 </div>
-                <h3 className="text-center text-white text-wrap text-2xl font-bold mx-auto" >"Falls are 
+                <h3 className="text-center text-white text-wrap text-2xl font-bold px-10" >Falls are 
                     <span className="color-signature"> leading cause of injury and injury death</span> among adults ages 65 and over
-                <br/> More than 1 in 4 older adults fall each year leading to"</h3>
+                <br/> More than 1 in 4 older adults fall each year leading to</h3>
                 <div className="flex items-end justify-center">
                     <Image className="object-cover" alt="text_close" src="/images/text_close.png" width={50} height={50}  />
                 </div>

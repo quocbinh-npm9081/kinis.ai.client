@@ -64,7 +64,7 @@ const FeatureItem = ({content,title, description, list, img}: FeatureItemProps) 
           }
         </ul>
       </div>
-      <div className="feature_img w-1/2">
+      <div className="feature_img w-1/2 flex items-center justify-center">
           {img && <Image src={img} alt="" width={500} height={500} />}
       </div>
     </div>
