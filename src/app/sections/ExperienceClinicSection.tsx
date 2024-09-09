@@ -5,11 +5,11 @@ import React from 'react'
 
 const ExperienceClinicSection = () => {
   return (
-    <section className='relative flex flex-col h-screen items-center justify-start'>
+    <section className='relative flex flex-col h-[170vh] items-center justify-start'>
         <div className='flex flex-col items-center justify-start gap-10 py-16'>
-            <Title title='Experience clinic-quality  <br/> balance assessment' subtitle='from the comfort of your home!' className='text-4xl md:text-5xl'/>
+            <Title title='Experience clinic-quality  <br/> balance assessment' subtitle='from the comfort of your home!' className='text-black text-3xl 2xl:text-4xl'/>
         </div>
-        <div className="container w-full grid grid-cols-2 ">
+        <div className="container w-full grid  grid-rows-2 md:grid-cols-2 ">
           <div className="flex flex-col items-center justify-center">
             <div className='relative'>
               <Image src='/images/iPhone-13-Pro-Front.png' alt='image-1' width={644} height={615}/>
@@ -26,7 +26,7 @@ const ExperienceClinicSection = () => {
               <CartExperienceComponent title='User-Friendly Interface' description='Easy to use, even for those new to health tech' bgColor='bg-cardExperienceDark' colorTitle='text-white' colorDescription='text-white'/>         
             </div>
             <div className="grid grid-rows-2 w-full mt-7">
-              <div className='text-dark text-start text-xl md:text-2xl'>Take the first step towards better balance and mobility today!</div>
+              <div className='text-dark text-start text-sm md:text-2xl py-2'>Take the first step towards better balance and mobility today!</div>
               <div className="flex justify-start items-center gap-4">
                 <button className="bg-[#949494] hover:bg-[#949494]/95 text-white font-bold py-2 px-4 md:py-4 md:px-6 rounded-lg text-base md:text-xl gap-8">
                   Try Our Free Balance Tool Now

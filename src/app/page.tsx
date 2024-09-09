@@ -1,4 +1,5 @@
 'use client'
+import ColleagueSection from "@/app/sections/ColleagueSection";
 import ExperienceClinicSection from "@/app/sections/ExperienceClinicSection";
 import FeatureSection from "@/app/sections/FeatureSection";
 import HomeSection from "@/app/sections/HomeSection";
@@ -35,6 +36,7 @@ export default function Home() {
             <FeatureSection />
             <KinisToolSection />
             <ExperienceClinicSection />
+            <ColleagueSection/>
           </main>
         </AnimatePresence>
       </LocomotiveScrollProvider>

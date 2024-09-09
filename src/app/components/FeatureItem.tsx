@@ -48,8 +48,8 @@ const textParts = (text: string) => text.split('<br/>').map((part, index) => (
 
 const FeatureItem = ({content,title, description, list, img}: FeatureItemProps) => {
   return (
-    <div className="feature_item flex flex-row p-10 justify-center items-center border-l-8 border-black flex-nowrap w-full">
-      <div className="feature_info flex flex-col gap-10 w-1/2">
+    <div className="feature_item flex flex-col md:flex-row p-2 md:p-10 justify-center items-center border-l-8 border-black flex-nowrap w-full">
+      <div className="feature_info flex flex-col gap-1 md:gap-10 w-full md:w-1/2">
         <TitleFeatureOverlay $content={content} >
           {textParts(title)}
         </TitleFeatureOverlay>

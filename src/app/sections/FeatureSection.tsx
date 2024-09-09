@@ -50,14 +50,15 @@ const FeatureSection = () => {
   return (
     <section>
         <div className="container mx-auto py-20">
-          <Title title="Smart Insoles, AI, and Expert Care:" subtitle="The Kinis Mobility Ecosystem" className='text-dark text-4xl md:text-5xl' />
-          <div className="relative flex flex-col items-start mt-20 py-10 gap-10 w-full">
+          <Title title="Smart Insoles, AI, and Expert Care:" subtitle="The Kinis Mobility Ecosystem" className='text-dark text-3xl 2xl:text-4xl' />
+          <div className="relative flex flex-col items-start mt-20 py-10 gap-10 w-full h-full">
               <BorderLeft />
               <FeatureItem 
                 content="01" 
                 title=" Wear your <br/> K1 Smart Insoles " 
                 description="Our smart insoles, equipped with Innovative Quad Bio Sensors, capture 360-degree movement data as you go about your day." 
                 list={["Seamless integration with any footwear", "All-day comfort for continuous use", "Water-resistant and shock-absorbing design"]} 
+                img="/images/bg_gif.png"
               />
 
               <FeatureItem 
