@@ -23,8 +23,6 @@ const TitleOverlay = styled.h3.attrs(
     props => ({ className : props.className}
   ))<{$content: string, $paddingTop: string, $paddingBottom: string}>`
     position: relative;
-    font-size: 1.875rem /* 30px */; 48px tương đương với 3rem.
-    line-height: 3.578rem /* 36px */;
     font-weight: 700;
     text-align: center;
     z-index: 20;
@@ -40,12 +38,12 @@ const TitleOverlay = styled.h3.attrs(
       line-height: 2.5rem /* 40px */;
       font-weight: 700;
       padding: 10px;
-      color: '#F9EFEA';
+      color: '#F3742D';
       opacity: 0.05;
     }
 `
 
-const Title: React.FC<TitleProps> = ({content = '', title, subtitle , paddingTop, paddingBottom, className = 'text-dark'}) => {
+const Title: React.FC<TitleProps> = ({content = '', title, subtitle , paddingTop, paddingBottom, className = 'text-dark text-4xl md:text-5xl'}) => {
   const titleParts = title.split('<br/>').map((part, index) => (
     <React.Fragment key={index}>
       {part}
@@ -56,7 +54,7 @@ const Title: React.FC<TitleProps> = ({content = '', title, subtitle , paddingTop
   return (
     <TitleOverlay $content={content} className={`${className}`} $paddingTop={paddingTop ? paddingTop : '0'} $paddingBottom={paddingBottom ? paddingBottom : '0'}>
         {titleParts} {' '}
-        <span className={`text-4xl font-bold text-center z-20 ${className} ${subFont.className}`}>{subtitle}</span>
+        <span className={`text-4xl md:text-5xl text-center z-20 ${className} ${subFont.className}`}>{subtitle}</span>
     </TitleOverlay>
   )
 }

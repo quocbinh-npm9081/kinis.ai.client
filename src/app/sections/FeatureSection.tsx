@@ -50,7 +50,7 @@ const FeatureSection = () => {
   return (
     <section>
         <div className="container mx-auto py-20">
-          <Title title="Smart Insoles, AI, and Expert Care:" subtitle="The Kinis Mobility Ecosystem" className='text-dark' />
+          <Title title="Smart Insoles, AI, and Expert Care:" subtitle="The Kinis Mobility Ecosystem" className='text-dark text-4xl md:text-5xl' />
           <div className="relative flex flex-col items-start mt-20 py-10 gap-10 w-full">
               <BorderLeft />
               <FeatureItem 
@@ -82,7 +82,7 @@ const FeatureSection = () => {
                 list={["AI-generated personalized recommendations", "Direct connection to qualified physical therapists/coaches", "Tele-health consultations based on your data", "Customized exercise plans and progress tracking"]} 
                 img="/images/iPhone-13-Pro-Front.png"
               />
-            <div className="mx-auto flex flex-row rounded-lg items-center justify-center gap-6 w-auto p-8 shadow-shadow-footer bg-[#F0F0F0]">
+            <div className="mx-auto flex flex-row rounded-lg items-center justify-center gap-6 w-auto p-8 shadow-shadow-footer bg-[#f0f0f0]">
               <p className="text-2xl font-bold ">Want to learn more about our Technology?</p>
               <ButtonPrimary text="Learn more" />
             </div>
