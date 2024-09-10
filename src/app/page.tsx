@@ -6,6 +6,8 @@ import HomeSection from "@/app/sections/HomeSection";
 import { KinisToolSection } from "@/app/sections/KinisToolSection";
 import MapSection from "@/app/sections/MapSection";
 import PartnerSection from "@/app/sections/PartnerSection";
+import PartnershipInvestSection from "@/app/sections/PartnershipInvestSection";
+import RoadMapSection from "@/app/sections/RoadMapSection";
 import ScienceBaseSection from "@/app/sections/ScienceBaseSection";
 import { AnimatePresence } from "framer-motion";
 import Image from "next/image";
@@ -37,6 +39,8 @@ export default function Home() {
             <KinisToolSection />
             <ExperienceClinicSection />
             <ColleagueSection/>
+            <RoadMapSection/>
+            <PartnershipInvestSection />
           </main>
         </AnimatePresence>
       </LocomotiveScrollProvider>
