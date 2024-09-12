@@ -5,11 +5,11 @@ import Link from 'next/link'
 const HomeSection = () => {
 
   return (
-    <section>
+    <section className='relative flex min-h-screen w-screen overflow-hidden'> 
        {/* TOP NAVIGATION */}
        <div className="fixed top-0 left-0 w-full z-50">
           <div className="flex items-center justify-between mx-auto ">
-            <Image src="/images/logo.svg" alt="logo" width={100} height={100} priority={true}/>
+            <Image src="/images/logo.svg" alt="logo" width={100} height={100} priority={true} className='w-auto h-auto'/>
             <div className="flex items-center ">
               <ul className="flex items-center gap-9 font-bold">
                 <li>

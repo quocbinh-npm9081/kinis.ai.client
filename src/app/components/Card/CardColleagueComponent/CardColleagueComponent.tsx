@@ -26,8 +26,12 @@ const CardOverlay = styled.div`
 const CardColleagueComponent = ({title, imgMain,imgHovering }: CardColleagueComponentProps) => {
   return (
     <CardOverlay className={`w-56 h-96 ${CardColleagueStyle.colleagueItem}`}>
-        <Image src={imgMain} alt={title} fill={true}/>
-        <Image src={imgHovering} alt={title} className="overlay-title" fill={true}/>
+        <Image src={imgMain} alt={title} fill={true} className='object-fill  w-full h-full' 
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" 
+        />
+        <Image src={imgHovering} alt={title} className="overlay-title object-fill w-full h-full" fill={true}
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" 
+        />
     </CardOverlay>
   );
 }

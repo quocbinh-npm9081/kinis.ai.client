@@ -4,7 +4,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 
-interface FeatureItemProps {
+interface FeatureItemComponentProps {
   content: string;
   title: string;
   description: string;
@@ -46,7 +46,7 @@ const textParts = (text: string) => text.split('<br/>').map((part, index) => (
   </React.Fragment>
 ));
 
-const FeatureItem = ({content,title, description, list, img}: FeatureItemProps) => {
+const FeatureItemComponent = ({content,title, description, list, img}: FeatureItemComponentProps) => {
   return (
     <div className="feature_item flex flex-col md:flex-row p-2 md:p-10 justify-center items-center border-l-8 border-black flex-nowrap w-full">
       <div className="feature_info flex flex-col gap-1 md:gap-10 w-full md:w-1/2">
@@ -65,10 +65,10 @@ const FeatureItem = ({content,title, description, list, img}: FeatureItemProps) 
         </ul>
       </div>
       <div className="feature_img w-1/2 flex items-center justify-center">
-          {img && <Image src={img} alt="" width={500} height={500} />}
+          {img && <Image src={img} alt="" width={500} height={500} className='w-auto h-auto'/>}
       </div>
     </div>
   )
 }
 
-export default FeatureItem
+export default FeatureItemComponent

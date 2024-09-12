@@ -5,8 +5,8 @@ import React from 'react'
 
 import { Cormorant_Garamond } from 'next/font/google'
 import styled from 'styled-components'
-import FeatureItem from '@/app/components/FeatureItem'
 import ButtonPrimary from '@/app/components/Button/ButtonPrimary'
+import FeatureItemComponent from '@/app/components/FeatureItemComponent'
 
 const subFont = Cormorant_Garamond({
   style: "italic",
@@ -53,7 +53,7 @@ const FeatureSection = () => {
           <Title title="Smart Insoles, AI, and Expert Care:" subtitle="The Kinis Mobility Ecosystem" className='text-dark text-3xl 2xl:text-4xl' />
           <div className="relative flex flex-col items-start mt-20 py-10 gap-10 w-full h-full">
               <BorderLeft />
-              <FeatureItem 
+              <FeatureItemComponent 
                 content="01" 
                 title=" Wear your <br/> K1 Smart Insoles " 
                 description="Our smart insoles, equipped with Innovative Quad Bio Sensors, capture 360-degree movement data as you go about your day." 
@@ -61,14 +61,14 @@ const FeatureSection = () => {
                 img="/images/bg_gif.png"
               />
 
-              <FeatureItem 
+              <FeatureItemComponent 
                 content="02" 
                 title="Move <br/> your Body" 
                 description="Slip Kinis smart insoles into your everyday shoes.<br/> Comfortable, durable, and packed with sensors." 
                 list={["High-precision sensors record gait, balance, and pressure points", "Continuous data collection during various activities (walking, running, workouts)", "Water-resistant and shock-absorbing design"]} 
               />
 
-              <FeatureItem 
+              <FeatureItemComponent 
                 content="03" 
                 title="Now, <br/> Check your phone!" 
                 description="Kinis detects subtle risk factors in your gait, balance, and posture, providing actionable biomechanical analytics &  personalized insights to keep you safe and mobile." 
@@ -76,7 +76,7 @@ const FeatureSection = () => {
                 img="/images/iPhone-13-Pro-Front.png"
               />
              
-              <FeatureItem 
+              <FeatureItemComponent 
                 content="04" 
                 title="Personalized Insights <br/> and Expert Feedback" 
                 description="Receive tailored advice and connect with professionals to optimize your mobility health." 

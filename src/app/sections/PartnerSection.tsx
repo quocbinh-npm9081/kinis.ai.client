@@ -17,7 +17,7 @@ const DarkOverlayGradient = styled.div`
 
 const PartnerSection = () => {
   return (
-    <section className="relative flex flex-col w-full h-screen items-center justify-center">
+    <section className="relative flex flex-col w-screen h-screen items-center justify-center">
         {/* SECTION PARTNER  */}
         <DarkOverlayGradient />
         {/* LIST PARTNER */}
@@ -26,27 +26,27 @@ const PartnerSection = () => {
             <div className="flex flex-col justify-center items-center z-20  w-full gap-10">
                 <div className="grid grid-cols-4 gap-10">
                     <div className="flex items-center justify-center">
-                        <Image src="/images/image_partner_1.png" alt="partner" width={170} height={170} />
+                        <Image src="/images/image_partner_1.png" alt="partner" width={170} height={170} className='w-auto h-auto'/>
                     </div>
                     <div className="flex items-center justify-center">
-                        <Image src="/images/image_partner_2.png" alt="partner" width={170} height={170} />
+                        <Image src="/images/image_partner_2.png" alt="partner" width={170} height={170} className='w-auto h-auto'/>
                     </div>
                     <div className="flex items-center justify-center">
-                        <Image src="/images/image_partner_3.png" alt="partner" width={170} height={170} />
+                        <Image src="/images/image_partner_3.png" alt="partner" width={170} height={170} className='w-auto h-auto'/>
                     </div>
                     <div className="flex items-center justify-center">
-                        <Image src="/images/image_partner_4.png" alt="partner" width={170} height={170} />
+                        <Image src="/images/image_partner_4.png" alt="partner" width={170} height={170} className='w-auto h-auto'/>
                     </div>
                 </div>
                 <div className="grid grid-cols-3 gap-10">
                     <div className="flex items-center justify-center">
-                        <Image src="/images/image_partner_5.png" alt="partner" width={170} height={170} />
+                        <Image src="/images/image_partner_5.png" alt="partner" width={170} height={170} className='w-auto h-auto'/>
                     </div>
                     <div className="flex items-center justify-center">
-                        <Image src="/images/image_partner_6.png" alt="partner" width={170} height={170} />
+                        <Image src="/images/image_partner_6.png" alt="partner" width={170} height={170} className='w-auto h-auto'/>
                     </div>
                     <div className="flex items-center justify-center">
-                        <Image src="/images/image_partner_7.png" alt="partner" width={170} height={170} />
+                        <Image src="/images/image_partner_7.png" alt="partner" width={170} height={170} className='w-auto h-auto'/>
                     </div>
                 </div>
             </div>
@@ -56,13 +56,13 @@ const PartnerSection = () => {
         <div className="flex w-full h-1/2 items-center justify-center relative py-8">
             <div className="flex items-center justify-center z-20  mx-auto container">
                 <div className="flex items-start justify-center"> 
-                    <Image className="object-cover" alt="text_open" src="/images/text_open.png" width={50} height={50}  />
+                    <Image className="object-cover w-auto h-auto" alt="text_open" src="/images/text_open.png" width={50} height={50}  />
                 </div>
                 <h3 className="text-center text-white text-wrap text-2xl md:text-3xl 2xl:text-4xl font-bold px-5" >Falls are 
                     <span className="color-signature"> leading cause of injury and injury death</span> among adults ages 65 and over
                 <br/> More than 1 in 4 older adults fall each year leading to</h3>
                 <div className="flex items-end justify-center">
-                    <Image className="object-cover" alt="text_close" src="/images/text_close.png" width={50} height={50}  />
+                    <Image className="object-cover w-auto h-auto" alt="text_close" src="/images/text_close.png" width={50} height={50}  />
                 </div>
             </div>
         <Image className="object-cover"  src="/images/care.png" alt="partner" fill={true}  />

@@ -6,7 +6,7 @@ import HomeSection from "@/app/sections/HomeSection";
 import { KinisToolSection } from "@/app/sections/KinisToolSection";
 import MapSection from "@/app/sections/MapSection";
 import PartnerSection from "@/app/sections/PartnerSection";
-import PartnershipInvestSection from "@/app/sections/PartnershipInvestSection";
+import FooterSection from "@/app/sections/FooterSection";
 import RoadMapSection from "@/app/sections/RoadMapSection";
 import ScienceBaseSection from "@/app/sections/ScienceBaseSection";
 import { AnimatePresence } from "framer-motion";
@@ -19,18 +19,27 @@ export default function Home() {
   const containerRef = useRef(null);
 
   return (
-    <LocomotiveScrollProvider
-        options={{
-          smooth: true,
-          smartphone: {
-            smooth: true,
-          },
-        }}
-        watch={[]}
-        containerRef={containerRef}   
-      >
-        <AnimatePresence>
-          <main className="min-h-screen items-center justify-between" data-scroll-container ref={containerRef}>
+    // <LocomotiveScrollProvider
+    //   options={
+    //     {
+    //       smooth: true,
+    //       smartphone: {
+    //         smooth: true,
+    //       },
+    //       tablet: {
+    //         smooth: true,
+    //       },
+    //     }
+    //   }
+    //   watch={
+    //     [
+
+    //     ]
+    //   }
+    //   containerRef={containerRef} 
+    //   >
+        <AnimatePresence > 
+          <main>
             <HomeSection />
             <PartnerSection />
             <MapSection />
@@ -40,9 +49,10 @@ export default function Home() {
             <ExperienceClinicSection />
             <ColleagueSection/>
             <RoadMapSection/>
-            <PartnershipInvestSection />
+            <FooterSection />
           </main>
         </AnimatePresence>
-      </LocomotiveScrollProvider>
+      // </LocomotiveScrollProvider>
   );
 }
+

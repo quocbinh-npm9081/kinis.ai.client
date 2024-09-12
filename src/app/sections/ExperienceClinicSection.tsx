@@ -12,7 +12,7 @@ const ExperienceClinicSection = () => {
         <div className="container w-full grid  grid-rows-2 md:grid-cols-2 ">
           <div className="flex flex-col items-center justify-center">
             <div className='relative'>
-              <Image src='/images/iPhone-13-Pro-Front.png' alt='image-1' width={644} height={615}/>
+              <Image src='/images/iPhone-13-Pro-Front.png' alt='image-1' width={644} height={615} className='w-auto h-auto'/>
             </div>
           </div>
           <div className="flex flex-col items-center justify-center gap-5">
