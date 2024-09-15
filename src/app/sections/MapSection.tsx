@@ -29,7 +29,7 @@ const MapSection = () => {
                
            </div>
         </div>
-        <div className="flex items-center justify-end w-full  pb-20">
+        <div className="flex items-center justify-end w-full pb-20">
             <Image src="/images/logo-notext 2.png" alt="CDC logo" width={97} height={95} className='w-auto h-auto'/>
         </div>
     </section>

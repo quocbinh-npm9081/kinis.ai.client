@@ -11,8 +11,8 @@ const DarkOverlayGradient = styled.div`
     height: 100%;
     top:0;
     left:0;
-    background: rgb(0,0,0);
-    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8431022067029936) 50%, rgba(0,0,0,0.680637220708596) 100%);
+background: rgb(0,0,0);
+background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.9528186274509804) 50%, rgba(0,0,0,0.3701855742296919) 100%);
 `
 
 const PartnerSection = () => {
@@ -54,19 +54,25 @@ const PartnerSection = () => {
         </div>
         {/* QUOTE */}
         <div className="flex w-full h-1/2 items-center justify-center relative py-8">
-            <div className="flex items-center justify-center z-20  mx-auto container">
+        <div className="flex flex-col items-center justify-center z-20  mx-auto container gap-8">
+            <div className="flex justify-center gap-3">
                 <div className="flex items-start justify-center"> 
-                    <Image className="object-cover w-auto h-auto" alt="text_open" src="/images/text_open.png" width={50} height={50}  />
+                    <Image className="object-cover w-auto h-auto" alt="text_open" src="/images/text_open.png" width={55} height={33}  />
                 </div>
                 <h3 className="text-center text-white text-wrap text-2xl md:text-3xl 2xl:text-4xl font-bold px-5" >Falls are 
                     <span className="color-signature"> leading cause of injury and injury death</span> among adults ages 65 and over
                 <br/> More than 1 in 4 older adults fall each year leading to</h3>
                 <div className="flex items-end justify-center">
-                    <Image className="object-cover w-auto h-auto" alt="text_close" src="/images/text_close.png" width={50} height={50}  />
+                    <Image className="object-cover w-auto h-auto" alt="text_close" src="/images/text_close.png" width={55} height={33}  />
                 </div>
             </div>
+            <div className="flex items-center justify-center pb-20">
+                <Image src="/images/logo-notext 2.png" alt="CDC logo" width={64} height={42} className='w-full h-auto'/>
+            </div>
+        </div>
         <Image className="object-cover"  src="/images/care.png" alt="partner" fill={true}  />
         </div>
+       
         {/* CART ANALYST */}
         <div className="absolute top-[90%] w-4/5 flex items-center justify-center z-20">
             <div className="grid grid-cols-5 gap-6">

@@ -9,37 +9,28 @@ import PartnerSection from "@/app/sections/PartnerSection";
 import FooterSection from "@/app/sections/FooterSection";
 import RoadMapSection from "@/app/sections/RoadMapSection";
 import ScienceBaseSection from "@/app/sections/ScienceBaseSection";
-import { AnimatePresence } from "framer-motion";
-import Image from "next/image";
-import { useRef } from "react";
-import { LocomotiveScrollProvider } from "react-locomotive-scroll";
+import { AnimatePresence, useScroll, useTransform, motion} from "framer-motion";
+import { useEffect, useRef, useState } from "react";
 
 
 export default function Home() {
   const containerRef = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: containerRef,
+    offset: ["start end", "end start"]
+  });
+
+  const y = useTransform(scrollYProgress, [0, 1], [0, -100]);
+
+  useEffect(() => {
+console.log(y);
+
+  }, [y]);
 
   return (
-    // <LocomotiveScrollProvider
-    //   options={
-    //     {
-    //       smooth: true,
-    //       smartphone: {
-    //         smooth: true,
-    //       },
-    //       tablet: {
-    //         smooth: true,
-    //       },
-    //     }
-    //   }
-    //   watch={
-    //     [
-
-    //     ]
-    //   }
-    //   containerRef={containerRef} 
-    //   >
-        <AnimatePresence > 
-          <main>
+      <AnimatePresence>
+        <main className="relative" ref={containerRef} >
+          <motion.div >
             <HomeSection />
             <PartnerSection />
             <MapSection />
@@ -47,12 +38,12 @@ export default function Home() {
             <FeatureSection />
             <KinisToolSection />
             <ExperienceClinicSection />
-            <ColleagueSection/>
-            <RoadMapSection/>
+            <ColleagueSection />
+            <RoadMapSection />
             <FooterSection />
-          </main>
-        </AnimatePresence>
-      // </LocomotiveScrollProvider>
+          </motion.div>
+        </main>
+      </AnimatePresence>
   );
 }
 

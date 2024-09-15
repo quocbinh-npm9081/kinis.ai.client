@@ -18,8 +18,11 @@ const config: Config = {
         'shadow-footer': '0px 1px 10px 0px #0000001A'
       },
       backgroundColor: {
-        cardExperienceDark: "#262626",
+        cardExperienceDark: "#F3742D",
         cardExperienceLight: "#FAFAFA",
+      },
+      borderColor: {
+        experience: "#0B0A0A",
       },
     },
    
