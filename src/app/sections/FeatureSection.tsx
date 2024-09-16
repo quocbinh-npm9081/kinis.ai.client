@@ -38,7 +38,7 @@ const FeatureSection = () => {
                 title=" Wear your <br/> K1 Smart Insoles " 
                 description="Our smart insoles, equipped with Innovative Quad Bio Sensors, capture 360-degree movement data as you go about your day." 
                 list={["Seamless integration with any footwear", "All-day comfort for continuous use", "Water-resistant and shock-absorbing design"]} 
-                img="/images/feature_item1.gif"
+                img="/images/Gif_K1_1.gif"
                 circlePosition={{top: '0', left: '90%'}}  
               />
 
