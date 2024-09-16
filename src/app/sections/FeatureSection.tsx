@@ -38,8 +38,10 @@ const FeatureSection = () => {
                 title=" Wear your <br/> K1 Smart Insoles " 
                 description="Our smart insoles, equipped with Innovative Quad Bio Sensors, capture 360-degree movement data as you go about your day." 
                 list={["Seamless integration with any footwear", "All-day comfort for continuous use", "Water-resistant and shock-absorbing design"]} 
-                img="/images/Gif_K1_1.gif"
+                img="/images/iPhone-13-Pro-Front.png"
                 circlePosition={{top: '0', left: '90%'}}  
+                zIndex={true}
+
               />
 
               <FeatureItemComponent 
@@ -49,6 +51,7 @@ const FeatureSection = () => {
                 list={["High-precision sensors record gait, balance, and pressure points", "Continuous data collection during various activities (walking, running, workouts)", "Water-resistant and shock-absorbing design"]} 
                 img="/images/feature_item2.gif"
                 circlePosition={{top: '38%', left: '27%'}}  
+                zIndex={true}
               />
 
               <FeatureItemComponent 
@@ -59,7 +62,6 @@ const FeatureSection = () => {
                 img="/images/Gif_3.gif"
                 circlePosition={{top: '50%', left: '70%'}}  
                 zIndex={true}
-
               />
              
               <FeatureItemComponent 

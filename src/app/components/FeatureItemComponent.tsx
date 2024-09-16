@@ -79,11 +79,11 @@ const textParts = (text: string) => text.split('<br/>').map((part, index) => (
   </React.Fragment>
 ));
 
-const FeatureItemComponent = ({content,title, description, list, img, zIndex, circlePosition={top: '0', left: '0' }}: FeatureItemComponentProps) => {
+const FeatureItemComponent = ({content,title, description,  list, img, zIndex, circlePosition={top: '0', left: '0' }}: FeatureItemComponentProps) => {
   return (
-    <FeatureItemContainer className="feature_item flex-col md:flex-row pl-4  md:pl-36 border-l-[16px] border-black w-full">
+    <FeatureItemContainer className="feature_item flex-col md:flex-row pl-4 h-[100vh] md:pl-36 border-l-[16px] border-black w-full gap-36">
       <CircleBgOverlay $circlePosition={circlePosition}/>
-      <div className="feature_info flex flex-col gap-1 md:gap-11 w-full md:w-1/2">
+      <div className="feature_info flex flex-col gap-1 md:gap-11 w-full md:w-1/2 z-50">
         <TitleFeatureOverlay $content={content}>
           {textParts(title)}
         </TitleFeatureOverlay>
@@ -98,8 +98,12 @@ const FeatureItemComponent = ({content,title, description, list, img, zIndex, ci
           }
         </ul>
       </div>
-      <div className={`feature_img w-1/2 flex items-center justify-center ${zIndex ? `z-10` : ''}`}>
-          {img && <Image src={img} alt="" width={500} height={500} className='w-auto h-auto'/>}
+      <div className={`relative  feature_img w-1/2 h-[80vh] flex items-center justify-center ${zIndex ? 'z-50' : ''}`}>
+        <div className="relative feature_img w-full h-full flex items-center justify-center">
+            {img && <Image src={img} alt={title} fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 30vw"
+              className="object-cover rounded-xl h-auto w-auto" />}
+        </div>
       </div>
     </FeatureItemContainer>
   )
