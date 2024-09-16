@@ -3,8 +3,40 @@ import React from 'react'
 import {  motion, useScroll, useTransform} from 'framer-motion'
 import Link from 'next/link'
 const HomeSection = () => {
+  const { scrollYProgress } = useScroll();
+  const color = useTransform(scrollYProgress, [0, 1], ['#000000', '#FFFFFF']); // Chuyển đổi từ màu đen sang trắng
 
   return (
+    // <div style={{ position: 'relative', height: '100vh', overflow: 'hidden' }}>
+    //   <motion.div
+    //     style={{
+    //       position: 'absolute',
+    //       top: '0',
+    //       left: '0',
+    //       width: '100%',
+    //       height: '100%',
+    //       backgroundImage:  `url(/images/Home_page.png)`,
+    //       backgroundSize: 'cover',
+    //       backgroundPosition: 'center',
+    //     }}
+    //   />
+    //   <motion.div
+    //     style={{
+    //       position: 'absolute',
+    //       top: '0',
+    //       left: '0',
+    //       width: '100%',
+    //       height: '100%',
+    //       backgroundImage: `url(/images/image8.png)`,
+    //       backgroundSize: 'cover',
+    //       backgroundPosition: 'center',
+    //       mixBlendMode: 'multiply',
+    //     }}
+    //   />
+    //   <motion.div style={{ color, position: 'relative', zIndex: 1 }}>
+    //     <h1>Scroll to Change Color</h1>
+    //   </motion.div>
+    // </div>
     <section className='relative flex min-h-screen w-screen overflow-hidden'> 
        {/* TOP NAVIGATION */}
        <div className="fixed top-0 left-0 w-full z-50">
