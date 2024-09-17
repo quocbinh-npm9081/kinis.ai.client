@@ -2,6 +2,7 @@ import { Cormorant_Garamond } from 'next/font/google'
 import Image from 'next/image'
 import React from 'react'
 import styled from 'styled-components'
+import localFont from "next/font/local";
 
 interface CirclePosition {
   top: string;
@@ -18,20 +19,23 @@ interface FeatureItemComponentProps {
   className?: string;
   circlePosition: CirclePosition;
   zIndex?: boolean;
+  unoptimized?: boolean 
 }
 
-const subFont = Cormorant_Garamond({
-    style: "italic",
-    subsets: ["latin"],
-    weight: ["400", "400", "500", "600", "700"],
-    variable: "--font-cormorant-garamond"
-  })
+
+
+const PPEditorialNewSans = localFont({
+  src: "../fonts/PPEditorialNew-Italic.otf",
+  variable: "--font-PPEditorialNew-sans",
+  weight: "100 900",
+}); 
 
 const TitleFeatureOverlay = styled.div<{$content: string}>`
     position: relative;
     font-size: 3rem /* 48px */;
     line-height: 3.6rem /* 57.6px */;
     font-weight: 700;
+    color: #222222;
     &::before {
       content: "${props => props.$content}";
       position: absolute;
@@ -79,7 +83,7 @@ const textParts = (text: string) => text.split('<br/>').map((part, index) => (
   </React.Fragment>
 ));
 
-const FeatureItemComponent = ({content,title, description,  list, img, zIndex, circlePosition={top: '0', left: '0' }}: FeatureItemComponentProps) => {
+const FeatureItemComponent = ({content,title, description,  list, img, zIndex, circlePosition={top: '0', left: '0' }, unoptimized=false}: FeatureItemComponentProps) => {
   return (
     <FeatureItemContainer className="feature_item flex-col md:flex-row pl-4 h-[100vh] md:pl-36 border-l-[16px] border-black w-full gap-36">
       <CircleBgOverlay $circlePosition={circlePosition}/>
@@ -87,13 +91,13 @@ const FeatureItemComponent = ({content,title, description,  list, img, zIndex, c
         <TitleFeatureOverlay $content={content}>
           {textParts(title)}
         </TitleFeatureOverlay>
-        <p className={`feature_info-description text-3xl font-bold ${subFont.className}`}>
+        <p className={`feature_info-description text-[#1A202C] text-3xl font-light leading-5 2xl:leading-9 2xl:tracking-[0.01em] ${PPEditorialNewSans.className}`}>
           {textParts(description)}
         </p>
         <ul className="feature_intro-list flex flex-col gap-4">
           {
             list.map((item, index) => (
-              <li key={index} className="feature_intro-item flex items-center gap-2 justify-start text-2xl"><Image src="/images/star_icon.svg" alt="" width={20} height={20} /> {item}</li>
+              <li key={index} className="feature_intro-item flex items-center text-[#262626] gap-2 justify-start text-2xl"><Image src="/images/star_icon.svg" alt="" width={20} height={20} /> {item}</li>
             ))
           }
         </ul>
@@ -102,7 +106,7 @@ const FeatureItemComponent = ({content,title, description,  list, img, zIndex, c
         <div className="relative feature_img w-full h-full flex items-center justify-center">
             {img && <Image src={img} alt={title} fill
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 30vw"
-              className="object-cover rounded-xl h-auto w-auto" />}
+              className="object-cover rounded-xl h-auto w-auto" unoptimized={unoptimized}/>}
         </div>
       </div>
     </FeatureItemContainer>
@@ -110,3 +114,5 @@ const FeatureItemComponent = ({content,title, description,  list, img, zIndex, c
 }
 
 export default FeatureItemComponent
+
+

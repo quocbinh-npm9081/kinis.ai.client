@@ -7,12 +7,12 @@ const ExperienceClinicSection = () => {
   return (
     <section className='relative flex flex-col items-center justify-start py-24'>
         <div className='flex flex-col items-center justify-start gap-10 pb-32'>
-            <Title title='Experience clinic-quality  <br/> balance assessment' subtitle='from the comfort of your home!' className='text-black text-3xl 2xl:text-5xl'/>
+            <Title title='Experience clinic-quality  <br/> balance assessment' subtitle='from the comfort of your home!' className='text-black text-3xl 2xl:text-[40px]'/>
         </div>
         <div className="container w-full grid  grid-rows-2 md:grid-rows-none md:grid-cols-2 ">
           <div className="flex flex-col items-center justify-center">
             <div className='relative'>
-              <Image src='/images/GIF_BAT_1.gif' alt='gif_BAT.gif' width={644} height={615} className='w-auto h-auto'/>
+              <Image src='/images/GIF_BAT_1.gif' alt='gif_BAT.gif' width={644} height={615} className='w-auto h-auto' unoptimized={true}/>
             </div>
           </div>
           <div className="flex flex-col items-center justify-center gap-5">

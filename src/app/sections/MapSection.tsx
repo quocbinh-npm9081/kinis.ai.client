@@ -7,7 +7,7 @@ import React from 'react'
 const MapSection = () => {
   return (
     <section className="container mx-auto flex flex-col w-full h-[180vh] items-center justify-center ">
-        <Title paddingTop="12" paddingBottom="7" title="Fall Prevalence Among Older Adults and <br/> Distribution of Prevention Clinics" subtitle=" in the United States (2020)" className="text-black text-3xl 2xl:text-4xl"/>
+        <Title paddingTop="12" paddingBottom="7" title="Fall Prevalence Among Older Adults and <br/> Distribution of Prevention Clinics" subtitle=" in the United States (2020)" className="text-black text-3xl 2xl:text-[40px]"/>
         <div className="flex w-full h-full items-center justify-center relative pt-8">
            <div className="relative w-5/6 h-full">
                 <Image className="object-fill w-auto h-auto" src="/images/US Map.png" alt="Map" width={1273} height={820} />

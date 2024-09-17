@@ -14,36 +14,34 @@ import { useEffect, useRef, useState } from "react";
 
 
 export default function Home() {
-  const containerRef = useRef(null);
-  const { scrollYProgress } = useScroll({
-    target: containerRef,
-    offset: ["start end", "end start"]
-  });
+//   const containerRef = useRef(null);
+//   const { scrollYProgress } = useScroll({
+//     target: containerRef,
+//     offset: ["start end", "end start"]
+//   });
 
-  const y = useTransform(scrollYProgress, [0, 1], [0, -100]);
+//   const y = useTransform(scrollYProgress, [0, 1], [0, -100]);
 
-  useEffect(() => {
-console.log(y);
+//   useEffect(() => {
+// console.log(y);
 
-  }, [y]);
+//   }, [y]);
 
   return (
-      <AnimatePresence>
-        <main className="relative" ref={containerRef} >
-          <motion.div >
-            <HomeSection />
-            <PartnerSection />
-            <MapSection />
-            <ScienceBaseSection />
-            <FeatureSection />
-            <KinisToolSection />
-            <ExperienceClinicSection />
-            <ColleagueSection />
-            <RoadMapSection />
-            <FooterSection />
-          </motion.div>
+      // <AnimatePresence>
+        <main>
+          <HomeSection />
+          <PartnerSection />
+          <MapSection />
+          <ScienceBaseSection />
+          <FeatureSection />
+          <KinisToolSection />
+          <ExperienceClinicSection />
+          <ColleagueSection />
+          <RoadMapSection />
+          <FooterSection />
         </main>
-      </AnimatePresence>
+      // </AnimatePresence>
   );
 }
 

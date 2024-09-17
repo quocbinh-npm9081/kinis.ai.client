@@ -22,7 +22,7 @@ const PartnerSection = () => {
         <DarkOverlayGradient />
         {/* LIST PARTNER */}
         <div className="flex flex-col w-full h-1/2 items-center justify-evenly relative py-8 gap-10">
-            <Title title="Organizations that" subtitle="trust us" className="text-white text-3xl 2xl:text-4xl"/>
+            <Title title="Organizations that" subtitle="trust us" className="text-white text-3xl 2xl:text-[40px]"/>
             <div className="flex flex-col justify-center items-center z-20  w-full gap-10">
                 <div className="grid grid-cols-4 gap-10">
                     <div className="flex items-center justify-center">
