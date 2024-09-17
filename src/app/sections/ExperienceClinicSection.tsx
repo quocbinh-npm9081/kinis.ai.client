@@ -2,10 +2,11 @@ import CartExperienceComponent from '@/app/components/Card/CartExperienceCompone
 import Title from '@/app/components/Title/Title'
 import Image from 'next/image'
 import React from 'react'
-
+import {motion} from 'framer-motion'
 const ExperienceClinicSection = () => {
+
   return (
-    <section className='relative flex flex-col items-center justify-start py-24'>
+    <motion.section className='relative flex flex-col items-center justify-start py-24' initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1, ease: "easeInOut" }}>
         <div className='flex flex-col items-center justify-start gap-10 pb-32'>
             <Title title='Experience clinic-quality  <br/> balance assessment' subtitle='from the comfort of your home!' className='text-black text-3xl 2xl:text-[40px]'/>
         </div>
@@ -36,7 +37,7 @@ const ExperienceClinicSection = () => {
             </div>
           </div>
         </div>
-    </section>
+    </motion.section>
   )
 }
 
