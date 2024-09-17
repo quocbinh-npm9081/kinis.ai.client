@@ -1,4 +1,3 @@
-import ButtonPrimary from '@/app/components/Button/ButtonPrimary'
 import CardPartnershipInvestComponent from '@/app/components/Card/CardPartnershipInvestComponent/CardPartnershipInvestComponent'
 import Image from 'next/image'
 import React from 'react'

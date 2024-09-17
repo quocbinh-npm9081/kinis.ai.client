@@ -9,8 +9,6 @@ import PartnerSection from "@/app/sections/PartnerSection";
 import FooterSection from "@/app/sections/FooterSection";
 import RoadMapSection from "@/app/sections/RoadMapSection";
 import ScienceBaseSection from "@/app/sections/ScienceBaseSection";
-import { AnimatePresence, useScroll, useTransform, motion} from "framer-motion";
-import { useEffect, useRef, useState } from "react";
 
 
 export default function Home() {

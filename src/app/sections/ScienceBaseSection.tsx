@@ -1,19 +1,5 @@
 import Title from '@/app/components/Title/Title'
-import Image from 'next/image'
 import React from 'react'
-import styled from 'styled-components'
-
-const DarkOverlay = styled.div`
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
- background: rgb(0,0,0);
-background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8431022067029936) 50%, rgba(0,0,0,0.680637220708596) 100%);
-    z-index: 1;
-`
-
 
 const ScienceBaseSection = () => {
   return (

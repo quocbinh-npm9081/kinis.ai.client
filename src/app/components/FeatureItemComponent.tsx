@@ -1,8 +1,8 @@
 import Image from 'next/image'
-import React, { useRef } from 'react'
+import React from 'react'
 import styled from 'styled-components'
 import localFont from "next/font/local";
-import { motion, useInView } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 interface CirclePosition {
   top: string;
