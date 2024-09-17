@@ -3,17 +3,11 @@ import Title from '@/app/components/Title/Title'
 import Image from 'next/image'
 import React from 'react'
 
-import { Cormorant_Garamond } from 'next/font/google'
 import styled from 'styled-components'
 import ButtonPrimary from '@/app/components/Button/ButtonPrimary'
 import FeatureItemComponent from '@/app/components/FeatureItemComponent'
 
-const subFont = Cormorant_Garamond({
-  style: "italic",
-  subsets: ["latin"],
-  weight: ["400", "400", "500", "600", "700"],
-  variable: "--font-cormorant-garamond"
-})
+
 
 const BorderLeft = styled.div`
   position: absolute;

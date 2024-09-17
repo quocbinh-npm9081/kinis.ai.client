@@ -1,15 +1,9 @@
 'use client'
 import React from 'react'
-import { Cormorant_Garamond } from 'next/font/google'
 import styled from 'styled-components';
 import localFont from "next/font/local";
 
-const subFont = Cormorant_Garamond({
-  style: "italic",
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
-  variable: "--font-cormorant-garamond"
-})
+
 
 const PPEditorialNewSans = localFont({
   src: "../../fonts/PPEditorialNew-Italic.otf",
@@ -59,9 +53,9 @@ const Title: React.FC<TitleProps> = ({content = '', title, subtitle , paddingTop
   ));
 
   return (
-    <TitleOverlay $content={content} className={`${className} leading-snug 2xl:leading-loose`} $paddingTop={paddingTop ? paddingTop : '0'} $paddingBottom={paddingBottom ? paddingBottom : '0'}>
+    <TitleOverlay $content={content} className={`${className} leading-snug 2xl:leading-loose font`} $paddingTop={paddingTop ? paddingTop : '0'} $paddingBottom={paddingBottom ? paddingBottom : '0'}>
         {titleParts} {' '}
-        <span className={`text-3xl 2xl:text-5xl text-center font-normal z-20 ${className} ${subFont.className} ${PPEditorialNewSans.className}`}>{subtitle}</span>
+        <span className={`text-3xl 2xl:text-5xl text-center font-normal z-20 ${className} ${PPEditorialNewSans.className}`}>{subtitle}</span>
     </TitleOverlay>
   )
 }
