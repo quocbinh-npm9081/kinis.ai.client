@@ -9,6 +9,7 @@ import PartnerSection from "@/app/sections/PartnerSection";
 import FooterSection from "@/app/sections/FooterSection";
 import RoadMapSection from "@/app/sections/RoadMapSection";
 import ScienceBaseSection from "@/app/sections/ScienceBaseSection";
+import { useEffect, useState } from "react";
 
 
 export default function Home() {
@@ -25,9 +26,21 @@ export default function Home() {
 
 //   }, [y]);
 
+const [allowScroll, setAllowScroll] = useState(false);
+
+useEffect(() => {
+  const handleScroll = () => {
+    if (window.scrollY > window.innerHeight) {
+      setAllowScroll(true);
+    }
+  };
+
+  window.addEventListener('scroll', handleScroll);
+  return () => window.removeEventListener('scroll', handleScroll);
+}, []);
   return (
       // <AnimatePresence>
-        <main>
+        <main className={allowScroll ? 'overflow-y-auto' : 'overflow-y-hidden'}>
           <HomeSection />
           <PartnerSection />
           <MapSection />
