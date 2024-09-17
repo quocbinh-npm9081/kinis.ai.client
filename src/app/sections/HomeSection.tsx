@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import React from 'react'
-import {  motion, useScroll, useTransform} from 'framer-motion'
 import Link from 'next/link'
 import localFont from "next/font/local";
 
@@ -10,8 +9,6 @@ const PPEditorialNewSans = localFont({
   weight: "100 900",
 });
 const HomeSection = () => {
-  const { scrollYProgress } = useScroll();
-  const color = useTransform(scrollYProgress, [0, 1], ['#000000', '#FFFFFF']); // Chuyển đổi từ màu đen sang trắng
 
   return (
     // <div style={{ position: 'relative', height: '100vh', overflow: 'hidden' }}>
