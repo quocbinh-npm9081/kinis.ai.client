@@ -1,13 +1,8 @@
 import Image from 'next/image'
 import React from 'react'
 import Link from 'next/link'
-import localFont from "next/font/local";
 
-const PPEditorialNewSans = localFont({
-  src: "../../fonts/PPEditorialNew-Italic.otf",
-  variable: "--font-PPEditorialNew-sans",
-  weight: "100 900",
-});
+
 const AboutUsSection = () => {
     return (
         <section className='relative flex min-h-screen w-screen overflow-hidden'> 
