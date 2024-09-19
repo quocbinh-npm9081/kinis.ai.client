@@ -15,13 +15,13 @@ const BorderLeft = styled.div`
   top: 0;
   left: 7px;  
   border-left: 1px solid black;
-  z-index: -1;
+  z-index: 49;
 `
 
 
 const FeatureSection = () => {
   return (
-    <section>
+    <section className='bg-white'>
         <div className="container mx-auto py-20">
           <Title title="Smart Insoles, AI, and Expert Care:" subtitle="The Kinis Mobility Ecosystem" className='text-dark text-3xl 2xl:text-[40px]' />
           <div className="relative flex flex-col items-start mt-20 py-10 gap-10  mx-auto">

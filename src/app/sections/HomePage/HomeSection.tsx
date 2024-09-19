@@ -2,26 +2,13 @@ import Image from 'next/image'
 import React from 'react'
 import Link from 'next/link'
 import localFont from "next/font/local";
-import { useScroll, useTransform } from 'framer-motion';
 
 const PPEditorialNewSans = localFont({
-  src: "../fonts/PPEditorialNew-Italic.otf",
+  src: "../../fonts/PPEditorialNew-Italic.otf",
   variable: "--font-PPEditorialNew-sans",
   weight: "100 900",
 });
 const HomeSection = () => {
-  const { scrollYProgress } = useScroll();
-  const options = {
-    // ease: [[0.7, 0, 0.84, 0], [0.7, 0, 0.84, 0], [0.7, 0, 0.84, 0]]
-  };
-  const x = useTransform(scrollYProgress, [0, 0.7, 1], [800, 0, 0], options);
-  const y = useTransform(scrollYProgress, [0, 0.7, 1], [-200, 0, 200], options);
-  const opacity = useTransform(
-    scrollYProgress,
-    [0.2, 0.3, 0.9, 1],
-    [0, 1, 1, 0],
-    options
-  );
 
   return (
     <section className='relative flex min-h-screen w-screen overflow-hidden'> 
