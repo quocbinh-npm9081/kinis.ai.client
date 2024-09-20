@@ -29,7 +29,9 @@ export default function Home() {
   return (
       // <AnimatePresence>
         <main>
-          <HomeSection />
+          <div style={{ height : "4200px"}}>
+            <HomeSection />
+          </div>
           <PartnerSection />
           <MapSection />
           <ScienceBaseSection />
