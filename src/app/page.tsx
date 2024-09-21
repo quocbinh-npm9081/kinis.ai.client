@@ -11,25 +11,15 @@ import ScienceBaseSection from "@/app/sections/HomePage/ScienceBaseSection";
 import { KinisToolSection } from "@/app/sections/HomePage/KinisToolSection";
 
 
+
 export default function Home() {
-//   const containerRef = useRef(null);
-//   const { scrollYProgress } = useScroll({
-//     target: containerRef,
-//     offset: ["start end", "end start"]
-//   });
-
-//   const y = useTransform(scrollYProgress, [0, 1], [0, -100]);
-
-//   useEffect(() => {
-// console.log(y);
-
-//   }, [y]);
 
 
   return (
       // <AnimatePresence>
         <main>
-          <div style={{ height : "4200px"}}>
+       
+          <div style={{ height : "4100px"}}>
             <HomeSection />
           </div>
           <PartnerSection />
