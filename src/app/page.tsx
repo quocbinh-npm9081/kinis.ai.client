@@ -18,8 +18,7 @@ export default function Home() {
   return (
       // <AnimatePresence>
         <main>
-       
-          <div style={{ height : "4100px"}}>
+          <div className="h-[400vh]">
             <HomeSection />
           </div>
           <PartnerSection />

@@ -5,7 +5,7 @@ import React from 'react'
 const FooterSection = () => {
   return (
     <section className='relative flex flex-col items-center justify-start bg-black h-[130vh]'>
-      <div className='absolute top-[-25%] flex flex-col items-center justify-center gap-12 border-b-2 border-white p-14 border-opacity-[30%]'>
+      <div className='absolute top-[-40%] 2xl:top-[-25%] flex flex-col items-center justify-center gap-12 border-b-2 border-white p-14 border-opacity-[30%]'>
         <div className='grid grid-rows-2 md:grid-cols-2 md:grid-rows-none gap-12 '>
           <CardPartnershipInvestComponent 
                 title='PARTNERSHIP & COLLABORATION' 

@@ -22,7 +22,7 @@ const HomeSection = () => {
       animate(scope.current, {
         height: `${(1 - latest / 0.111) * 100}vh`,
         // transition: { type: 'spring', stiffness: 100 }
-      })
+      }, {duration : 0})
     }
     scrollYProgress.on("change", handleScroll);
     return ()=> scrollYProgress.clearListeners();
@@ -62,15 +62,15 @@ const HomeSection = () => {
   ]);
  
   return (
-    <section className='sticky flex h-screen w-screen overflow-hidden top-0 '> 
+    <section className='sticky flex h-screen w-screen overflow-hidden top-0 z-[999]'> 
           {/* TOP NAVIGATION */}
     <motion.div 
-      className="fixed top-0 left-0 w-full" 
+      className="fixed top-0 left-0 w-full z-[999]" 
       style={{zIndex: 100, height: slideDistance}}
       animate={{ y: isInView ? 0 : -slideDistance }}
       transition={{ duration: 0.2, delay: 0.25, ease: "easeInOut" }}
     >
-        <div className="flex items-center justify-between container mx-auto mt-2 py-2 px-11 bg-white rounded-lg">
+        <div className="flex items-center justify-between container mx-auto mt-2 py-2 px-11 bg-white rounded-lg z-[999]">
           <Image src="/images/logo.svg" alt="logo" width={100} height={100} priority={true} className='w-auto h-auto'/>
           <div className="flex items-center ">
             <ul className="flex items-center gap-9 font-bold">
@@ -103,43 +103,44 @@ const HomeSection = () => {
 
       <div className="flex flex-col w-full h-screen items-center justify-start absolute top-1/4 left-0">
         <div className='container mx-auto  grid grid-cols-2 grid-rows-2 w-full'>
-            <div className='text-yellow-600 text-2xl 2xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl font-normal max-w-[445px] text-start font-primary'>Revolutionizing Fall Risk Prediction</div>
-            <div className='text-yellow-600 text-2xl 2xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl font-normal italic max-w-[389px] text-center'></div>
-            <div className='text-yellow-600 text-2xl 2xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl font-normal italic max-w-[389px] text-center'></div>
+            <div className='text-black text-2xl 2xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl font-normal max-w-[445px] text-start font-primary'>Revolutionizing Fall Risk Prediction</div>
+            <div className='text-black text-2xl 2xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl font-normal italic max-w-[389px] text-center'></div>
+            <div className='text-black text-2xl 2xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl font-normal italic max-w-[389px] text-center'></div>
             <div className='flex justify-end w-full'>
-              <div className={`text-yellow-600 text-2xl 2xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl font-normal  max-w-[389px] text-end ${PPEditorialNewSans.className}`}>
+              <div className={`text-black text-2xl 2xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl font-normal  max-w-[389px] text-end ${PPEditorialNewSans.className}`}>
                 by AI-Powered Smart Insoles
               </div>
             </div>
           </div>
           <div className="container mx-auto flex flex-col w-full items-start gap-6">
-            <div className="max-w-[480px] font-normal text-yellow-600  text-xl 2xl:text-2xl lg:text-xl md:text-sm sm:text-xs">
+            <div className="max-w-[480px] font-normal text-black  text-xl 2xl:text-2xl lg:text-xl md:text-sm sm:text-xs">
                 Unveiling Our Cutting-Edge Fusion: Our Patent-Pending Bio Sensor Technology Combined with an Advanced Movement Prediction Model
             </div>
-            <button className="bg-primary hover:bg-primary/95 text-yellow-600  font-bold py-4 px-8 rounded-full text-nowrap gap-10">
+            <button className="bg-primary hover:bg-primary/95 text-black  font-bold py-4 px-8 rounded-full text-nowrap gap-10">
               Join Our Pilot Study!
             </button>
           </div>
       </div>
 
-      <motion.div className="flex flex-col w-full h-screen items-center justify-center bg-cover bg-center bg-no-repeat absolute top-0 left-0 z-30" style={{y, backgroundImage: `url(/images/banner.png)` }}>
-       
+      <motion.div className="flex flex-col w-full h-screen items-center justify-center bg-cover bg-center bg-no-repeat absolute top-0 left-0 z-30" style={{y, backgroundImage: `url(/images/Home_page.png)` }}>
+      <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50 z-40"></div>
+
       </motion.div>
 
       <motion.div   ref={scope}  className="flex flex-col w-full h-screen items-center justify-start absolute top-1/4 left-0 z-40">
         <div className="overflow-hidden w-full top-0 flex flex-col items-start">
           <div className='container mx-auto  grid grid-cols-2 grid-rows-2 w-full'>
-              <div className='text-black text-2xl 2xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl font-normal max-w-[445px] text-start font-primary'>Revolutionizing Fall Risk Prediction</div>
-              <div className='text-black text-2xl 2xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl font-normal italic max-w-[389px] text-center'></div>
-              <div className='text-black text-2xl 2xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl font-normal italic max-w-[389px] text-center'></div>
+              <div className='text-white text-2xl 2xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl font-normal max-w-[445px] text-start font-primary'>Revolutionizing Fall Risk Prediction</div>
+              <div className='text-white text-2xl 2xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl font-normal italic max-w-[389px] text-center'></div>
+              <div className='text-white text-2xl 2xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl font-normal italic max-w-[389px] text-center'></div>
               <div className='flex justify-end w-full'>
-                <div className={`text-black text-2xl 2xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl font-normal  max-w-[389px] text-end ${PPEditorialNewSans.className}`}>
+                <div className={`text-white text-2xl 2xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl font-normal  max-w-[389px] text-end ${PPEditorialNewSans.className}`}>
                   by AI-Powered Smart Insoles
                 </div>
               </div>
           </div>
           <div className="container mx-auto flex flex-col w-full items-start gap-6">
-            <div className="max-w-[480px] font-normal text-black text-xl 2xl:text-2xl lg:text-xl md:text-sm sm:text-xs">
+            <div className="max-w-[480px] font-normal text-white text-xl 2xl:text-2xl lg:text-xl md:text-sm sm:text-xs">
                   Unveiling Our Cutting-Edge Fusion: Our Patent-Pending Bio Sensor Technology Combined with an Advanced Movement Prediction Model
             </div>
             <button className="bg-primary hover:bg-primary/95 text-white font-bold py-4 px-8 rounded-full text-nowrap gap-10">

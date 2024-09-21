@@ -3,7 +3,7 @@ import LegendComponent from '@/app/components/LegendComponent'
 import Title from '@/app/components/Title/Title'
 import Image from 'next/image'
 import React from 'react'
-
+import {motion} from 'framer-motion'
 const MapSection = () => {
   return (
     <section className="flex flex-col w-full h-[180vh] items-center justify-center bg-white">
@@ -12,12 +12,26 @@ const MapSection = () => {
             <div className="flex w-full h-full items-center justify-center relative pt-8">
             <div className="relative w-5/6 h-full">
                     <Image className="object-fill w-auto h-auto" src="/images/US Map.png" alt="Map" width={1273} height={820} />
+                    <Image src="/images/arrow_follow_map.png" alt="arrow follow" width={200} height={37} className='absolute w-auto h-auto md:top-[15%] md:left-[85%]'/>
+                    <div className='absolute w-full h-full flex top-[-10%] md:left-[105%] 2xl:left-[100%] 2xl:top-[-5%] '>
+                        <div className='flex flex-col items-center justify-start gap-6'>
+                            <div className='flex flex-col items-center justify-center'>
+                                <Image src="/images/icon_home.png" alt='icon home' height={30} width={47} className='w-auto h-auto'/>
+                                <p className='font-medium text-black text-sm'>
+                                Where we conduct <br />
+                                feasibility study
+                                </p>
+                            </div>
+                        <Image src="/images/Positive.png" alt="arrow follow" width={200} height={37} className=' w-auto h-auto'/>
+                        </div>
+                    </div>
+
             </div>
             <div className="w-1/6 h-full flex items-end justify-end">
                     <div className="flex flex-col gap-2 pb-36">
-                        <div className="flex items-center justify-center gap-2">
+                        <div className="relative flex items-center justify-center gap-2">
                             <Image src="/images/Mappin.png" alt="Map" width={30} height={47} className='w-auto h-auto'/>
-                            <span className="text-sm font-bold">
+                            <span className="text-sm font-bold ">
                                 Current fall prevention <br/> clinics
                             </span>
                         </div>

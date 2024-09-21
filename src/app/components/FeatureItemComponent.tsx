@@ -120,7 +120,7 @@ const FeatureItemComponent = ({content,title, description,  list, img, zIndex, c
         <BeforeElement $content={content}/>
           {textParts(title)}
         </TitleFeatureOverlay>
-        <p className={`feature_info-description text-[#1A202C] text-3xl font-light leading-5 2xl:leading-9 2xl:tracking-[0.01em] ${PPEditorialNewSans.className}`}>
+        <p className={`feature_info-description text-[#1A202C] text-xl  md:text-3xl font-light leading-5 2xl:leading-9 2xl:tracking-[0.01em] ${PPEditorialNewSans.className}`}>
           {textParts(description)}
         </p>
         <ul className="feature_intro-list flex flex-col gap-4">

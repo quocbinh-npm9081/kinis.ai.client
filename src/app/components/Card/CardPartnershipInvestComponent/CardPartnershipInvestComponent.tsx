@@ -8,7 +8,7 @@ interface CardPartnershipInvestComponentProps {
 
 const CardPartnershipInvestComponent : React.FC<CardPartnershipInvestComponentProps> = ({title, listContent, contentButton}) => {
   return (
-    <div className='flex flex-col justify-between h-full gap-3 2xl:px-10 2xl:py-9 2xl:gap-6 2xl:w-[630px] 2xl:h-[479px] border border-[#FBFBFB] shadow-[0px_10px_10px_0px_rgba(0,0,0,0.1)] rounded-lg bg-white'>
+    <div className='flex flex-col justify-between h-full gap-3 px-10 py-8 2xl:px-10 2xl:py-9 2xl:gap-6 md:w-[650px] 2xl:w-[630px] 2xl:h-[479px] border border-[#FBFBFB] shadow-[0px_10px_10px_0px_rgba(0,0,0,0.1)] rounded-lg bg-white'>
         <div className='grid grid-rows-2 gap-2'>
             <h3 className='text-primary font-bold text-xl 2xl:text-3xl whitespace-nowrap'>{title}</h3>
             <div className='bg-[#262626] w-full h-[1px] opacity-[30%] mt-4'></div>
