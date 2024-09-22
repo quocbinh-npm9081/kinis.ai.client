@@ -2,28 +2,23 @@ import CardAnalystComponent from '@/app/components/Card/CardAnalystComponent/Car
 import Title from '@/app/components/Title/Title'
 import Image from 'next/image'
 import React from 'react'
-import styled from 'styled-components'
-import {motion} from 'framer-motion'
 
-const DarkOverlayGradient = styled.div`
-    position: absolute;
-    z-index: 1;
-    width: 100%;
-    height: 100%;
-    top:0;
-    left:0;
-background: rgb(0,0,0);
-background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.9528186274509804) 50%, rgba(0,0,0,0.3701855742296919) 100%);
-`
 
 const PartnerSection = () => {
   return (
-    <motion.section 
+    <section 
         className="relative flex flex-col w-screen h-screen items-center justify-center"
-        initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1, ease: "easeInOut" }}
     >
         {/* SECTION PARTNER  */}
-        <DarkOverlayGradient />
+        <div style={{
+            position: "absolute",
+            zIndex: 1,
+            width: "100%",
+            height: "100%",
+            top:0,
+            left:0,
+            background: "linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.9528186274509804) 50%, rgba(0,0,0,0.3701855742296919) 100%)"
+        }}></div>
         {/* LIST PARTNER */}
         <div className="flex flex-col w-full h-1/2 items-center justify-evenly relative py-8 gap-10">
             <Title title="Organizations that" subtitle="trust us" className="text-white text-3xl 2xl:text-[40px]"/>
@@ -88,7 +83,7 @@ const PartnerSection = () => {
             </div>
         </div>
        
-    </motion.section>
+    </section>
   )
 }
 

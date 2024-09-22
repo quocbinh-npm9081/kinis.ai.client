@@ -2,13 +2,11 @@ import LegendComponent from '@/app/components/LegendComponent'
 import Title from '@/app/components/Title/Title'
 import Image from 'next/image'
 import React from 'react'
-import {motion} from 'framer-motion'
 
 const MapSection = () => {
   return (
-    <motion.section 
+    <section 
     className="flex flex-col w-full h-[180vh] items-center justify-center bg-white"
-    initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1, ease: "easeInOut" }}
     >
         <div className="container  mx-auto flex flex-col w-full h-[180vh] items-center justify-center">
             <Title paddingTop="12" paddingBottom="7" title="Fall Prevalence Among Older Adults and <br/> Distribution of Prevention Clinics" subtitle=" in the United States (2020)" className="text-black text-3xl 2xl:text-[40px]"/>
@@ -51,7 +49,7 @@ const MapSection = () => {
                 <Image src="/images/logo-notext 2.png" alt="CDC logo" width={97} height={95} className='w-auto h-auto'/>
             </div>
         </div>
-    </motion.section>
+    </section>
   )
 }
 

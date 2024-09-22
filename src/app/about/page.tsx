@@ -3,7 +3,12 @@ import AboutUsSection from '@/app/sections/AboutPage/AboutUsSection'
 import InvestorSection from '@/app/sections/AboutPage/InvestorSection'
 import OurTechnologySection from '@/app/sections/AboutPage/OurTechnologySection'
 import FooterSection from '@/app/sections/HomePage/FooterSection'
+import { Metadata } from 'next'
 import React from 'react'
+
+export const metadata: Metadata = {
+  title: "About"
+};
 
 const About = () => {
   return (

@@ -1,4 +1,3 @@
-'use client'
 import ColleagueSection from "@/app/sections/HomePage/ColleagueSection";
 import ExperienceClinicSection from "@/app/sections/HomePage/ExperienceClinicSection";
 import FeatureSection from "@/app/sections/HomePage/FeatureSection";
@@ -13,8 +12,6 @@ import { KinisToolSection } from "@/app/sections/HomePage/KinisToolSection";
 
 
 export default function Home() {
-
-
   return (
       // <AnimatePresence>
         <main>
