@@ -1,5 +1,5 @@
 'use client'
-import LegendComponent from '@/app/components/LegendComponent'
+// import LegendComponent from '@/app/components/LegendComponent'
 import Title from '@/app/components/Title/Title'
 import Image from 'next/image'
 import React from 'react'
