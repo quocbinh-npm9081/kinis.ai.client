@@ -67,4 +67,8 @@ body {
           max-width: 1590px;
       }
   }
+
+  .vertical-text {
+    writing-mode: vertical-rl;
+  }
 }

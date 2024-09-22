@@ -2,10 +2,15 @@ import CardPartnershipInvestComponent from '@/app/components/Card/CardPartnershi
 import Image from 'next/image'
 import React from 'react'
 
-const FooterSection = () => {
+interface IProps{
+  isShowCartPartnerShip? : boolean
+}
+
+const FooterSection : React.FC<IProps> = ({isShowCartPartnerShip = true}) => {
   return (
-    <section className='relative flex flex-col items-center justify-start bg-black h-[130vh]'>
-      <div className='absolute top-[-40%] 2xl:top-[-25%] flex flex-col items-center justify-center gap-12 border-b-2 border-white p-14 border-opacity-[30%]'>
+    <section className={`relative flex flex-col items-center justify-start bg-black  ${isShowCartPartnerShip ? 'h-[130vh]' : 'h-[100vh]'}`}>
+      {isShowCartPartnerShip && <>
+        <div className='absolute top-[-40%] 2xl:top-[-25%] flex flex-col items-center justify-center gap-12 border-b-2 border-white p-14 border-opacity-[30%]'>
         <div className='grid grid-rows-2 md:grid-cols-2 md:grid-rows-none gap-12 '>
           <CardPartnershipInvestComponent 
                 title='PARTNERSHIP & COLLABORATION' 
@@ -18,15 +23,15 @@ const FooterSection = () => {
                 contentButton='Investor' 
           />
         </div>
-        <div className='flex flex-row items-center justify-center gap-10  px-10 py-8 2xl:w-[1312px] gap-8 rounded-lg bg-white' >
+        <div className='flex flex-row items-center justify-center  px-10 py-8 2xl:w-[1312px] gap-8 rounded-lg bg-white' >
             <p className='text-black text-xl 2xl:text-2xl italic font-[400]'>Our team is committed to responding within 24 hours. We are thrilled about these potential collaborations and look forward to connecting with you.</p>
             <p className='text-white bg-primary px-4 py-2 2xl:px-6 2xl:py-4 rounded-lg text-xl 2xl:text-2xl font-[400] text-nowrap gap-2'>Email: vincent@kinis.com(Mr. Vincent Vu)</p>
         </div>
-      
       </div>
+      </>}
+      
       <div className='flex flex-row items-center justify-center w-full h-full'>
       </div>
-     
 
       <div className='container mx-auto flex flex-row items-center justify-between w-full h-full max-w-[1444px] pb-10 px-10' >
           {/* FOOTER LEFT */}

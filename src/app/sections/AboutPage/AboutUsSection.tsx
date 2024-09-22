@@ -19,10 +19,7 @@ const AboutUsSection = () => {
                       <Link href="/about">About Kinis</Link>
                     </li>
                     <li>
-                      <Link href="/technology">Our Technology</Link>
-                    </li>
-                    <li>
-                      <Link href="/product">Our Product</Link>
+                      <Link href="/about">Our Technology</Link>
                     </li>
                   </ul>
                 </div>

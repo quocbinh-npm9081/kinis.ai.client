@@ -55,7 +55,7 @@ Whether you're walking, climbing stairs, jogging, or performing daily chores, Ki
                 title="Now, <br/> Check your phone!" 
                 description="Kinis detects subtle risk factors in your gait, balance, and posture, providing actionable biomechanical analytics &  personalized insights to keep you safe and mobile." 
                 list={["Advanced AI algorithms process raw data", "Comprehensive gait and balance metrics", "Easy-to-understand visualizations and reports", "Real-time risk assessments"]} 
-                img="/images/iPhone-13-Pro-Front.png"
+                img="/images/Walk.gif"
                 circlePosition={{top: '50%', left: '70%'}}  
                 zIndex={true}
                 unoptimized={true}
@@ -66,7 +66,7 @@ Whether you're walking, climbing stairs, jogging, or performing daily chores, Ki
                 title="Personalized Insights <br/> and Expert Feedback" 
                 description="Receive tailored advice and connect with professionals to optimize your mobility health." 
                 list={["AI-generated personalized recommendations", "Direct connection to qualified physical therapists/coaches", "Tele-health consultations based on your data", "Customized exercise plans and progress tracking"]} 
-                img="/images/iPhone-13-Pro-Front.png"
+                img="/images/Home.gif"
                 circlePosition={{top: '10%', left: '0'}}  
                 zIndex={true}
               />

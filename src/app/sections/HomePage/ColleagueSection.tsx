@@ -8,7 +8,7 @@ const ColleagueSection = () => {
         <div className="flex flex-col items-center justify-start gap-10 py-16">
             <Title title="Our Science team:" subtitle='Backed by 100+ years of combined experience' content='' className="text-white text-3xl 2xl:text-[40px]"/>
         </div>
-        <div className='flex flex-row items-start justify-center gap-10 h-full w-full 2xl:pt-16'>
+        <div className='flex flex-row items-start justify-center gap-10 2xl:gap-20 h-full w-full 2xl:pt-16'>
             <CardColleagueComponent title='Dr. John Doe' imgMain='/images/our-team 1.png' imgHovering='/images/Property 1=Group 69.png' />
             <CardColleagueComponent title='Bethany Russell PT,DPT' imgMain='/images/Property 1=Rectangle 74.png' imgHovering='/images/Property 1=Group 69 (1).png'/>
             <CardColleagueComponent title='Dr. Joe Abretski Co-Founder & CSO' imgMain='/images/Property 1=Rectangle 74 (3).png' imgHovering='/images/Property 1=Group 69 (4).png'/>

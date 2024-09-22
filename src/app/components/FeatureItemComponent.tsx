@@ -67,8 +67,8 @@ const CircleBgOverlay = styled.div<{$circlePosition: CirclePosition}>`
   position: absolute;
   top: ${props => props.$circlePosition.top};
   left: ${props => props.$circlePosition.left};
-  width: 500px; /* Đặt chiều rộng của hình tròn */
-  height: 500px; /* Đặt chiều cao của hình tròn */
+  width: 700px; /* Đặt chiều rộng của hình tròn */
+  height: 700px; /* Đặt chiều cao của hình tròn */
   border-radius: 50%;
   opacity: 0.75;
 background: rgb(243,116,45);
@@ -130,12 +130,13 @@ const FeatureItemComponent = ({
           }
         </ul>
       </div>
-      <div className={`relative  feature_img w-1/2 h-[80vh] flex items-center justify-center ${zIndex ? 'z-50' : ''}`}>
+      <div className={`relative  feature_img w-1/2 h-[50vh] flex items-center justify-center ${zIndex ? 'z-50' : ''}`}>
         <div className="relative feature_img w-full h-full flex items-center justify-center">
             {img && <Image 
-                        src={img} alt={title} layout='responsive'
+                        src={img} alt={title} 
                         width={200} height={300}
-                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 30vw"
+                        priority
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 40vw, 30vw"
                         className="object-cover rounded-xl h-auto w-auto" 
                         unoptimized={unoptimized}
                     />}
