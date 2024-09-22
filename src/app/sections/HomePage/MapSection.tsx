@@ -3,7 +3,6 @@ import LegendComponent from '@/app/components/LegendComponent'
 import Title from '@/app/components/Title/Title'
 import Image from 'next/image'
 import React from 'react'
-import {motion} from 'framer-motion'
 const MapSection = () => {
   return (
     <section className="flex flex-col w-full h-[180vh] items-center justify-center bg-white">

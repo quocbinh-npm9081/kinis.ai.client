@@ -31,10 +31,10 @@ const FeatureSection = () => {
                 title=" Wear your <br/> K1 Smart Insoles " 
                 description="Slip K1 Smart Insoles into your everyday shoes. Comfortable, durable, and packed with sensors." 
                 list={["Seamless integration with any footwear", "All-day comfort for continuous use", "Water-resistant and shock-absorbing design"]} 
-                img="/images/iPhone-13-Pro-Front.png"
+                img="/images/K1_GIF.gif" 
                 circlePosition={{top: '0', left: '90%'}}  
                 zIndex={true}
-
+                unoptimized={true}
               />
 
               <FeatureItemComponent 

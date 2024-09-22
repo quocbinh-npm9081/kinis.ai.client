@@ -54,7 +54,7 @@ const HomeSection = () => {
 
   useEffect(() => scrollYProgress.on("change",(latest) => {
     setIsAtTop(latest == 0)
-  }), []);
+  }), [scrollVelocity, scrollYProgress]);
 
   useEffect(() => setIsInView(isScrollingBack || isAtTop), [
     isScrollingBack,

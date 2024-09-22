@@ -16,6 +16,7 @@ interface FeatureItemComponentProps {
   description: string;
   list: string[];
   img?: string;
+  mov?: string;
   className?: string;
   circlePosition: CirclePosition;
   zIndex?: boolean;
@@ -29,27 +30,6 @@ const PPEditorialNewSans = localFont({
   variable: "--font-PPEditorialNew-sans",
   weight: "100 900",
 }); 
-
-// const TitleFeatureOverlay = styled(motion.div)<{$content: string}>`
-//     position: relative;
-//     font-size: 3rem /* 48px */;
-//     line-height: 3.6rem /* 57.6px */;
-//     font-weight: 700;
-//     color: #222222;
-//     &::before {
-//       content: "${props => props.$content}";
-//       position: absolute;
-//       top: -70%;
-//       left: 0;
-//       font-size: 15rem /* 240px */;
-//       line-height: 15rem /* 240px */;
-//       font-weight: 700;
-//       padding: 10px;
-//       color: '#F3742D';
-//       opacity: 0.05;
-
-//     }
-// `
 
 const TitleFeatureOverlay = styled(motion.div)`
   position: relative;
@@ -106,7 +86,16 @@ const textParts = (text: string) => text.split('<br/>').map((part, index) => (
   </React.Fragment>
 ));
 
-const FeatureItemComponent = ({content,title, description,  list, img, zIndex, circlePosition={top: '0', left: '0' }, unoptimized=false}: FeatureItemComponentProps) => {
+const FeatureItemComponent = ({
+  content, 
+  title, 
+  description, 
+  list, 
+  img, 
+  mov ,
+  zIndex,
+  circlePosition={top: '0', left: '0' },
+  unoptimized=false}: FeatureItemComponentProps) => {
   return (
     <FeatureItemContainer 
       className="feature_item flex-col md:flex-row pl-4 h-[100vh] md:pl-36 border-l-[16px] border-black w-full gap-36" 
@@ -144,11 +133,17 @@ const FeatureItemComponent = ({content,title, description,  list, img, zIndex, c
       <div className={`relative  feature_img w-1/2 h-[80vh] flex items-center justify-center ${zIndex ? 'z-50' : ''}`}>
         <div className="relative feature_img w-full h-full flex items-center justify-center">
             {img && <Image 
-                        src={img} alt={title} fill
+                        src={img} alt={title} layout='responsive'
+                        width={200} height={300}
                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 30vw"
                         className="object-cover rounded-xl h-auto w-auto" 
                         unoptimized={unoptimized}
                     />}
+
+
+            {mov && <video className='rounded-xl h-auto w-auto object-cover' controls>
+                      <source src={mov} type="video/mp4" />
+                   </video>}
         </div>
       </div>
     </FeatureItemContainer>
