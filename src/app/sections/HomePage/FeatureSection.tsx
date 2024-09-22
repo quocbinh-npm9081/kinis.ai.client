@@ -69,6 +69,7 @@ Whether you're walking, climbing stairs, jogging, or performing daily chores, Ki
                 img="/images/Home.gif"
                 circlePosition={{top: '10%', left: '0'}}  
                 zIndex={true}
+                unoptimized={true}
               />
             <div className="mx-auto flex flex-row rounded-lg items-center justify-center gap-6 w-auto p-8 shadow-shadow-footer bg-[#f0f0f0]">
               <p className="text-2xl font-bold ">Want to learn more about our Technology?</p>

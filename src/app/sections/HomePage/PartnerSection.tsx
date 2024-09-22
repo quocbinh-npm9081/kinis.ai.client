@@ -3,6 +3,7 @@ import Title from '@/app/components/Title/Title'
 import Image from 'next/image'
 import React from 'react'
 import styled from 'styled-components'
+import {motion} from 'framer-motion'
 
 const DarkOverlayGradient = styled.div`
     position: absolute;
@@ -17,7 +18,10 @@ background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.9528186274509
 
 const PartnerSection = () => {
   return (
-    <section className="relative flex flex-col w-screen h-screen items-center justify-center">
+    <motion.section 
+        className="relative flex flex-col w-screen h-screen items-center justify-center"
+        initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1, ease: "easeInOut" }}
+    >
         {/* SECTION PARTNER  */}
         <DarkOverlayGradient />
         {/* LIST PARTNER */}
@@ -84,7 +88,7 @@ const PartnerSection = () => {
             </div>
         </div>
        
-    </section>
+    </motion.section>
   )
 }
 
