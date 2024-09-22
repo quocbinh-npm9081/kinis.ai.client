@@ -1,8 +1,7 @@
 import Image from 'next/image'
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import Link from 'next/link'
 import localFont from "next/font/local";
-import { useScroll, useTransform, motion, useAnimate, useVelocity} from 'framer-motion';
 
 const PPEditorialNewSans = localFont({
   src: "../../fonts/PPEditorialNew-Italic.otf",
