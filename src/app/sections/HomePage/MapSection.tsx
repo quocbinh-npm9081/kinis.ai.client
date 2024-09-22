@@ -1,5 +1,5 @@
 'use client'
-// import LegendComponent from '@/app/components/LegendComponent'
+import LegendComponent from '@/app/components/LegendComponent'
 import Title from '@/app/components/Title/Title'
 import Image from 'next/image'
 import React from 'react'
@@ -26,7 +26,7 @@ const MapSection = () => {
                     </div>
 
             </div>
-            {/* <div className="w-1/6 h-full flex items-end justify-end">
+            <div className="w-1/6 h-full flex items-end justify-end">
                     <div className="flex flex-col gap-2 pb-36">
                         <div className="relative flex items-center justify-center gap-2">
                             <Image src="/images/Mappin.png" alt="Map" width={30} height={47} className='w-auto h-auto'/>
@@ -41,7 +41,7 @@ const MapSection = () => {
                         <LegendComponent backgroundColor="#790000" title="34.4% - < 38.0%" /> 
                     </div>
                 
-            </div> */}
+            </div>
             </div>
             <div className="flex items-center justify-end w-full pb-20">
                 <Image src="/images/logo-notext 2.png" alt="CDC logo" width={97} height={95} className='w-auto h-auto'/>
