@@ -18,9 +18,7 @@ export default function Home() {
   return (
       // <AnimatePresence>
         <main>
-          <div className="h-[400vh]">
-            <HomeSection />
-          </div>
+          <HomeSection />
           <PartnerSection />
           <MapSection />
           <ScienceBaseSection />
