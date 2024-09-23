@@ -73,8 +73,8 @@ const PartnerSection = () => {
         </div>
        
         {/* CART ANALYST */}
-        <div className="absolute top-[85%] md:top-[80%] lg:top-[85%] 2xl:top-[88%] container z-20">
-            <div className="flex gap-6 items-end">
+        <div className="absolute top-[85%] md:top-[80%] lg:top-[85%] 2xl:top-[88%] z-20">
+            <div className="container mx-auto flex gap-6 items-end">
                 <CardAnalystComponent title="41,000" description="deaths" />
                 <CardAnalystComponent title="3,6 millions" description="emergency department visits" />
                 <CardAnalystComponent title="1,2 millions" description="hospital stays" />
