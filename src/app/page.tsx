@@ -1,3 +1,4 @@
+'use client'
 import ColleagueSection from "@/app/sections/HomePage/ColleagueSection";
 import ExperienceClinicSection from "@/app/sections/HomePage/ExperienceClinicSection";
 import FeatureSection from "@/app/sections/HomePage/FeatureSection";
