@@ -12,7 +12,7 @@ const ExperienceClinicSection = () => {
         <div className="container w-full grid  grid-rows-2 md:grid-rows-none md:grid-cols-2 ">
           <div className="flex flex-col items-center justify-center">
             <div className='relative'>
-              <Image src='/images/GIF_BAT_1.gif' alt='gif_BAT.gif' width={644} height={615} className='w-auto h-auto' unoptimized={true}/>
+              <Image src='/images/GIF_BAT_1.gif' alt='gif_BAT.gif' width={646} height={646} className='w-auto h-auto' unoptimized={true}/>
             </div>
           </div>
           <div className="flex flex-col items-center justify-center gap-5">
@@ -26,7 +26,7 @@ const ExperienceClinicSection = () => {
               <CartExperienceComponent title='User-Friendly Interface' description='Easy to use, even for those new to health tech' bgColor='bg-cardExperienceDark' colorTitle='text-white' colorDescription='text-white'/>         
             </div>
             <div className="grid grid-rows-2 w-full mt-7">
-              <div className='text-dark text-start text-sm md:text-2xl py-2'>Take the first step towards better balance and mobility today!</div>
+              <div className='text-dark text-start text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl p-1 lg:py-2'>Take the first step towards better balance and mobility today!</div>
               <div className="flex justify-start items-center gap-4">
                 <button className="bg-[#949494] hover:bg-[#949494]/95 text-white font-bold py-2 px-4 md:py-4 md:px-6 rounded-lg text-base md:text-xl gap-8">
                   Try Our Free Balance Tool Now

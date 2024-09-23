@@ -55,7 +55,7 @@ const Title: React.FC<TitleProps> = ({content = '', title, subtitle , paddingTop
   return (
     <TitleOverlay $content={content} className={`${className} leading-snug 2xl:leading-loose font`} $paddingTop={paddingTop ? paddingTop : '0'} $paddingBottom={paddingBottom ? paddingBottom : '0'}>
         {titleParts} {' '}
-        <span className={`text-3xl 2xl:text-5xl text-center font-normal z-20 ${className} ${PPEditorialNewSans.className}`}>{subtitle}</span>
+        <span className={`text-lg md:text-xl lg:text-3xl 2xl:text-5xl text-center font-normal z-20 ${className} ${PPEditorialNewSans.className}`}>{subtitle}</span>
     </TitleOverlay>
   )
 }

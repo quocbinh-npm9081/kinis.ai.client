@@ -58,7 +58,7 @@ const PartnerSection = () => {
                 <div className="flex items-start justify-center"> 
                     <Image className="object-cover w-auto h-auto" alt="text_open" src="/images/text_open.png" width={55} height={33}  />
                 </div>
-                <h3 className="text-center text-white text-wrap text-2xl md:text-3xl 2xl:text-4xl font-bold px-5" >Falls are 
+                <h3 className="text-center text-white text-wrap text-lg md:text-xl lg:text-2xl 2xl:text-4xl font-bold px-5" >Falls are 
                     <span className="color-signature"> leading cause of injury and injury death</span> among adults ages 65 and over
                 <br/> More than 1 in 4 older adults fall each year leading to</h3>
                 <div className="flex items-end justify-center">
@@ -73,13 +73,13 @@ const PartnerSection = () => {
         </div>
        
         {/* CART ANALYST */}
-        <div className="absolute top-[90%] w-4/5 flex items-center justify-center z-20">
-            <div className="grid grid-cols-5 gap-6">
-                <CardAnalystComponent title="41,000" description="Deaths" />
-                <CardAnalystComponent title="3,6 millions" description="Emergency department visits" />
-                <CardAnalystComponent title="1,2 millions" description="Hospital stays" />
-                <CardAnalystComponent title="$80 billions" description="Older adult falls medical costs/year" />
-                <CardAnalystComponent title="2/3 of costs" description="Are shouldered by Medicare" />
+        <div className="absolute top-[85%] md:top-[80%] lg:top-[85%] 2xl:top-[88%] container z-20">
+            <div className="flex gap-6 items-end">
+                <CardAnalystComponent title="41,000" description="deaths" />
+                <CardAnalystComponent title="3,6 millions" description="emergency department visits" />
+                <CardAnalystComponent title="1,2 millions" description="hospital stays" />
+                <CardAnalystComponent title="$80 billions" description="older adult falls medical costs/year" isHeight={true} />
+                <CardAnalystComponent title="2/3 of costs" description="are shouldered by medicare" />
             </div>
         </div>
        

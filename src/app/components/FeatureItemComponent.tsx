@@ -31,19 +31,15 @@ const PPEditorialNewSans = localFont({
   weight: "100 900",
 }); 
 
-const TitleFeatureOverlay = styled(motion.div)`
-  position: relative;
-  font-size: 3rem; /* 48px */
-  line-height: 3.6rem; /* 57.6px */
-  font-weight: 700;
-  color: #222222;
-`;
 
-const BeforeElement = styled.div<{ $content: string }>`
+
+const BeforeElement = styled.div.attrs(
+  props => ({className : props.className})
+)<{ $content: string }>`
   &::before {
     content: "${props => props.$content}";
     position: absolute;
-    top: -70%;
+    top: -80px;
     left: 0;
     font-size: 15rem; /* 240px */
     line-height: 15rem; /* 240px */
@@ -105,11 +101,11 @@ const FeatureItemComponent = ({
     >
       <CircleBgOverlay $circlePosition={circlePosition}/>
       <div className="feature_info flex flex-col gap-1 md:gap-11 w-full md:w-1/2 z-50">
-        <TitleFeatureOverlay  >
-        <BeforeElement $content={content}/>
+        <div className='relative text-xl md:text-3xl lg:text-4xl 2xl:text-5xl font-bold text-[#222222] 2xl:leading-10' >
+          <BeforeElement $content={content}/>
           {textParts(title)}
-        </TitleFeatureOverlay>
-        <p className={`feature_info-description text-[#1A202C] text-xl  md:text-3xl font-light leading-5 2xl:leading-9 2xl:tracking-[0.01em] ${PPEditorialNewSans.className}`}>
+        </div>
+        <p className={`feature_info-description text-[#1A202C] text-lg md:text-xl lg:text-2xl 2xl:text-3xl font-light leading-5 md:leading-6 lg:xl:leading-7 xl:leading-8 2xl:leading-9 2xl:tracking-[0.01em] ${PPEditorialNewSans.className}`}>
           {textParts(description)}
         </p>
         <ul className="feature_intro-list flex flex-col gap-4">
@@ -117,7 +113,7 @@ const FeatureItemComponent = ({
             list.map((item, index) => (
               <li 
                 key={index} 
-                className="feature_intro-item flex items-center text-[#262626] gap-2 justify-start text-2xl"
+                className="feature_intro-item flex items-center text-[#262626] gap-2 justify-start text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl"
               >
                 <Image 
                   src="/images/star_icon.svg" alt=""
