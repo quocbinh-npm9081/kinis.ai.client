@@ -136,7 +136,7 @@ const FeatureItemComponent = ({
                         src={img} alt={title} 
                         width={200} height={300}
                         priority
-                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 40vw, 30vw"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 30vw"
                         className="object-cover rounded-xl h-auto w-auto" 
                         unoptimized={unoptimized}
                     />}

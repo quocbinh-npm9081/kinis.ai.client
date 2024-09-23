@@ -36,8 +36,13 @@ const HomeSection = () => {
       {/* TOP NAVIGATION */}
 
       {/* HERO SECTION */}
-      <div className="flex flex-col w-full h-screen items-center justify-center bg-cover bg-center bg-no-repeat absolute top-0 left-0" style={{backgroundImage: `url(/images/banner.png)`}}>
-
+      <div className="flex flex-col w-full h-screen items-center justify-center absolute top-0 left-0">
+        <Image 
+          src="/images/banner.png"
+          alt=''
+          width={1920}
+          height={1080}
+        />
         
       </div>
 
