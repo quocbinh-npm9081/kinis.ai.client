@@ -34,12 +34,12 @@ const TitleOverlay = styled.h3.attrs(
       position: absolute;
       top: 50%;
       left: 50%;
-      transform: translate(-50%, -67%);
+      transform: translate(-50%, -50%);
       font-size: 11.25rem /* 36px */;
       line-height: 2.5rem /* 40px */;
       font-weight: 700;
       padding: 10px;
-      color: '#F3742D';
+      color: #F3742D;
       opacity: 0.05;
     }
 `
