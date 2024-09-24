@@ -16,6 +16,7 @@ interface FeatureItemComponentProps {
   description: string;
   list: string[];
   img?: string;
+  imgs? : string;
   mov?: string;
   className?: string;
   circlePosition: CirclePosition;
@@ -98,6 +99,7 @@ const FeatureItemComponent = ({
   description, 
   list, 
   img, 
+  imgs,
   mov ,
   zIndex,
   circlePosition={top: '0', left: '0' },
@@ -139,6 +141,7 @@ const FeatureItemComponent = ({
       <div className={`relative  feature_img w-1/2 h-full flex items-center justify-center ${zIndex ? 'z-50' : ''}`}>
         <div className="relative feature_img w-full h-full flex items-center justify-center">
             {img && <Image 
+                        overrideSrc={imgs && imgs}
                         src={img} alt={title} 
                         width={200} height={300}
                         priority
@@ -146,6 +149,7 @@ const FeatureItemComponent = ({
                         className="object-cover rounded-xl h-auto w-auto" 
                         unoptimized={unoptimized}
                     />}
+
 
 
             {mov && <video className='rounded-xl h-auto w-auto object-cover' controls>

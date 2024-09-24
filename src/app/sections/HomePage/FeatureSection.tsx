@@ -56,6 +56,7 @@ Whether you're walking, climbing stairs, jogging, or performing daily chores, Ki
                 description="Kinis detects subtle risk factors in your gait, balance, and posture, providing actionable biomechanical analytics &  personalized insights to keep you safe and mobile." 
                 list={["Advanced AI algorithms process raw data", "Comprehensive gait and balance metrics", "Easy-to-understand visualizations and reports", "Real-time risk assessments"]} 
                 img="/images/Walk.gif"
+                imgs='/images/Walk_desktop.gif'
                 circlePosition={{top: '50%', left: '70%'}}  
                 zIndex={true}
                 unoptimized={true}
