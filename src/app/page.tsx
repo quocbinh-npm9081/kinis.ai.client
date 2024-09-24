@@ -15,7 +15,7 @@ import { KinisToolSection } from "@/app/sections/HomePage/KinisToolSection";
 export default function Home() {
   return (
       // <AnimatePresence>
-        <main>
+        <main className="overflow-hidden">
           <HomeSection />
           <PartnerSection />
           <MapSection />

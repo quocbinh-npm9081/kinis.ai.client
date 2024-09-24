@@ -7,7 +7,7 @@ import React from 'react'
 const PartnerSection = () => {
   return (
     <section 
-        className="relative flex flex-col w-screen h-screen items-center justify-center"
+        className="relative flex flex-col w-full h-screen items-center justify-center"
     >
         {/* SECTION PARTNER  */}
         <div style={{
