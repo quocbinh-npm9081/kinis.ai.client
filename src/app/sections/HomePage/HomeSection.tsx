@@ -10,7 +10,9 @@ const PPEditorialNewSans = localFont({
 });
 const HomeSection = () => {
   return (
-    <section className='relative flex flex-col h-[110vh] 2xl:h-[100vh] w-full overflow-hidden bg-cover bg-center bg-no-repeat bg-white' style={{backgroundImage : 'url("/images/banner.png")'}}> 
+    <section 
+    className='relative flex flex-col h-[110vh] 2xl:h-[100vh] w-full overflow-hidden bg-cover bg-center bg-no-repeat bg-white' 
+    style={{backgroundImage : 'url("/images/banner.png")'}}> 
       {/* TOP NAVIGATION */}
       <div className="flex items-center justify-between h-[60px] container mx-auto mt-2 py-2  bg-white rounded-lg z-[999]">
         <Image src="/images/logo.svg" alt="logo" width={100} height={100} priority={true} className='w-auto h-auto'/>
@@ -69,12 +71,6 @@ const HomeSection = () => {
         </div>
         
       </div>
-
-      
-
-  
-
- 
     </section>
   )
 }
