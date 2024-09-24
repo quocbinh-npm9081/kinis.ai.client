@@ -70,13 +70,11 @@ const PartnerSection = () => {
             </div>
         </div>
         <Image className="object-cover"  src="/images/care.png" alt="partner" fill={true}  />
-        </div>
-       
-        {/* CART ANALYST */}
-        <div 
-            className="absolute z-20" 
-            style={{top: "110%", left: "50%", transform: "translate(-50%, -110%)"}}
-        >
+            {/* CART ANALYST */}
+            <div 
+                className="absolute z-20" 
+                style={{bottom: "0", left: "50%", transform: "translate(-50%, 50%)"}}
+            >
             <div className="container mx-auto flex gap-6 items-end">
                 <CardAnalystComponent title="41,000" description="deaths" />
                 <CardAnalystComponent title="3,6 millions" description="emergency department visits" />
@@ -85,6 +83,9 @@ const PartnerSection = () => {
                 <CardAnalystComponent title="2/3 of costs" description="are shouldered by medicare" />
             </div>
         </div>
+        </div>
+       
+    
        
     </section>
   )
