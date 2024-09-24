@@ -7,7 +7,7 @@ const ExperienceClinicSection = () => {
   return (
     <section className='relative flex flex-col items-center justify-start py-24' >
         <div className='flex flex-col items-center justify-start gap-10 pb-32'>
-            <Title title='Experience clinic-quality  <br/> balance assessment' subtitle='from the comfort of your home!' className='text-black text-3xl 2xl:text-[40px]'/>
+            <Title title='Experience clinic-quality  <br/> balance assessment' subtitle='from the comfort of your home!' className='text-black text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-[40px]'/>
         </div>
         <div className="container w-full grid  grid-rows-2 md:grid-rows-none md:grid-cols-2 ">
           <div className="flex flex-col items-center justify-center">

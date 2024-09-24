@@ -104,13 +104,13 @@ const FeatureItemComponent = ({
   unoptimized=false}: FeatureItemComponentProps) => {
   return (
     <FeatureItemContainer 
-      className="feature_item flex-col md:flex-row pl-4 h-[100vh] md:pl-36 border-l-[16px] border-black w-full gap-36" 
+      className="h-[100vh] feature_item flex-col md:flex-row pl-4 md:pl-36 border-l-[16px] border-black w-full gap-20 md:gap-24 lg:gap-28 xl:gap-32 2xl:gap-36" 
       initial={{ opacity: 0 }} 
       whileInView={{ opacity: 1 }} 
       transition={{ duration: 1, ease: "easeInOut" }}
     >
       <CircleBgOverlay $circlePosition={circlePosition}/>
-      <div className="feature_info flex flex-col gap-1 md:gap-11 w-full md:w-1/2 z-50">
+      <div className="feature_info flex flex-col gap-7 md:gap-8 lg:gap-9 xl:gap-10 2xl:gap-11 w-full md:w-1/2 z-50">
         <div className='relative text-xl md:text-lg lg:text-4xl 2xl:text-5xl font-bold text-[#222222] 2xl:leading-10' >
           <BeforeElement $content={content}/>
           {textParts(title)}
@@ -118,7 +118,7 @@ const FeatureItemComponent = ({
         <p className={`feature_info-description text-[#1A202C] text-lg md:text-xl lg:text-2xl 2xl:text-3xl font-light leading-5 md:leading-6 lg:xl:leading-7 xl:leading-8 2xl:leading-9 2xl:tracking-[0.01em] ${PPEditorialNewSans.className}`}>
           {textParts(description)}
         </p>
-        <ul className="feature_intro-list flex flex-col gap-4">
+        <ul className="feature_intro-list flex flex-col gap-1 md:gap-2 lg:gap-3 xl:gap-4">
           {
             list.map((item, index) => (
               <li 

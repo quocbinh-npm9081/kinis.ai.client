@@ -13,7 +13,9 @@
     --foreground: #171717;
   }
 } */
-
+* {
+  box-sizing: border-box;
+}
 body {
   color: var(--foreground);
   background: var(--background);

@@ -21,7 +21,7 @@ const PartnerSection = () => {
         }}></div>
         {/* LIST PARTNER */}
         <div className="flex flex-col w-full h-1/2 items-center justify-evenly relative py-8 gap-10">
-            <Title title="Organizations that" subtitle="trust us" className="text-white text-3xl 2xl:text-[40px]"/>
+            <Title title="Organizations that" subtitle="trust us" className="text-white text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-[40px]"/>
             <div className="flex flex-col justify-center items-center z-20  w-full gap-10">
                 <div className="grid grid-cols-4 gap-10">
                     <div className="flex items-center justify-center">
@@ -73,7 +73,10 @@ const PartnerSection = () => {
         </div>
        
         {/* CART ANALYST */}
-        <div className="absolute top-[85%] md:top-[80%] lg:top-[85%] 2xl:top-[88%] z-20">
+        <div 
+            className="absolute z-20" 
+            style={{top: "110%", left: "50%", transform: "translate(-50%, -110%)"}}
+        >
             <div className="container mx-auto flex gap-6 items-end">
                 <CardAnalystComponent title="41,000" description="deaths" />
                 <CardAnalystComponent title="3,6 millions" description="emergency department visits" />

@@ -23,7 +23,7 @@ const FeatureSection = () => {
   return (
     <section className='bg-white'>
         <div className="container mx-auto py-20">
-          <Title title="Smart Insoles, AI, and Expert Care:" subtitle="The Kinis Mobility Ecosystem" className='text-dark text-3xl 2xl:text-[40px]' />
+          <Title title="Smart Insoles, AI, and Expert Care:" subtitle="The Kinis Mobility Ecosystem" className='text-dark text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-[40px]' />
           <div className="relative flex flex-col items-start mt-20 py-10 gap-10">
               <BorderLeft />
               <FeatureItemComponent 
