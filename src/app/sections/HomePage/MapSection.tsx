@@ -6,9 +6,9 @@ import React from 'react'
 const MapSection = () => {
   return (
     <section 
-    className="flex flex-col w-full h-[150vh] items-center justify-center bg-white"
+    className="flex flex-col w-full h-auto items-center justify-center bg-white"
     >
-        <div className="container  mx-auto flex flex-col w-full h-[180vh] items-center justify-center">
+        <div className="container mx-auto flex flex-col w-full h-auto items-center justify-center">
             <Title paddingTop="12" paddingBottom="7" title="Fall Prevalence Among Older Adults and <br/> Distribution of Prevention Clinics" subtitle=" in the United States (2020)" className="text-black text-3xl 2xl:text-[40px]"/>
             <div className="flex w-full h-full items-center justify-start relative pt-8">
             <div className="relative container mx-auto h-full">

@@ -71,7 +71,7 @@ Whether you're walking, climbing stairs, jogging, or performing daily chores, Ki
                 zIndex={true}
                 unoptimized={true}
               />
-            <div className="mx-auto flex flex-row rounded-lg items-center justify-center gap-6 w-auto p-8 shadow-shadow-footer bg-[#f0f0f0]">
+            <div className="mx-auto flex flex-row rounded-lg items-center justify-center gap-6 w-auto p-8 shadow-shadow-footer bg-[#f0f0f0] z-[100]">
               <p className="text-2xl font-bold ">Want to learn more about our Technology?</p>
               <ButtonPrimary text="Learn more" />
             </div>
