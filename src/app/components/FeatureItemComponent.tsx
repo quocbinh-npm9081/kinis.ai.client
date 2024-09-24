@@ -75,12 +75,22 @@ background: radial-gradient(circle, rgba(243,116,45,0.6951155462184874) 5%, rgba
 `
 
 
-const textParts = (text: string) => text.split('<br/>').map((part, index) => (
-  <React.Fragment key={index}>
-    {part}
-    {index < text.split('<br/>').length - 1 && <br />}
-  </React.Fragment>
-));
+const textParts = (text: string) => {
+  return text.split(/(<br\/>|<brline\/>)/).map((part, index) => {
+    if (part === '<br/>') {
+      return <br key={index} />;
+    } else if (part === '<brline/>') {
+      return (
+        <React.Fragment key={index}>
+          <br />
+          <br />
+        </React.Fragment>
+      );
+    } else {
+      return <React.Fragment key={index}>{part}</React.Fragment>;
+    }
+  });
+};
 
 const FeatureItemComponent = ({
   content, 
@@ -101,7 +111,7 @@ const FeatureItemComponent = ({
     >
       <CircleBgOverlay $circlePosition={circlePosition}/>
       <div className="feature_info flex flex-col gap-1 md:gap-11 w-full md:w-1/2 z-50">
-        <div className='relative text-xl md:text-3xl lg:text-4xl 2xl:text-5xl font-bold text-[#222222] 2xl:leading-10' >
+        <div className='relative text-xl md:text-lg lg:text-4xl 2xl:text-5xl font-bold text-[#222222] 2xl:leading-10' >
           <BeforeElement $content={content}/>
           {textParts(title)}
         </div>
@@ -126,7 +136,7 @@ const FeatureItemComponent = ({
           }
         </ul>
       </div>
-      <div className={`relative  feature_img w-1/2 h-[50vh] flex items-center justify-center ${zIndex ? 'z-50' : ''}`}>
+      <div className={`relative  feature_img w-1/2 h-full flex items-center justify-center ${zIndex ? 'z-50' : ''}`}>
         <div className="relative feature_img w-full h-full flex items-center justify-center">
             {img && <Image 
                         src={img} alt={title} 

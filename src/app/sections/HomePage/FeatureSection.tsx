@@ -40,7 +40,7 @@ const FeatureSection = () => {
               <FeatureItemComponent 
                 content="02" 
                 title="Move <br/> your Body" 
-                description="Our smart insoles, equipped with Innovative Quad Bio Sensors, capture 360-degree movement data as you go about your day.
+                description="Our smart insoles, equipped with Innovative Quad Bio Sensors, capture 360-degree movement data as you go about your day. <brline/>
 Whether you're walking, climbing stairs, jogging, or performing daily chores, Kinis captures your movements in real-time.
 " 
                 list={["High-precision sensors record gait, balance, and pressure points", "Continuous data collection during various activities (walking, running, workouts)", "Water-resistant and shock-absorbing design"]} 
