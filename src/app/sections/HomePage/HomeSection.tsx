@@ -10,9 +10,7 @@ const PPEditorialNewSans = localFont({
 });
 const HomeSection = () => {
   return (
-    <section 
-    className='relative flex flex-col h-[110vh] 2xl:h-[100vh] w-full overflow-hidden bg-cover bg-center bg-no-repeat bg-white' 
-    style={{backgroundImage : 'url("/images/banner.png")'}}> 
+    <section className='relative flex flex-col h-[110vh] 2xl:h-[100vh] w-screen overflow-hidden   bg-cover bg-center bg-no-repeat bg-white' style={{backgroundImage : 'url("/images/banner.png")'}}> 
       {/* TOP NAVIGATION */}
       <div className="flex items-center justify-between h-[60px] container mx-auto mt-2 py-2  bg-white rounded-lg z-[999]">
         <Image src="/images/logo.svg" alt="logo" width={100} height={100} priority={true} className='w-auto h-auto'/>
@@ -49,18 +47,18 @@ const HomeSection = () => {
             </div>
             <div className="container mx-auto   overflow-hidden w-full h-full top-0 flex flex-col items-start justify-center">
               <div className=' grid grid-cols-2 grid-rows-2 w-full'>
-                  <div className='text-black text-xl sm:text-3xl md:text-4xl lg:text-5xl 2xl:text-6xl font-normal w-[295px] lg:w-[345px] 2xl:w-[445px] text-start font-primary'>Revolutionizing Fall Risk Prediction</div>
+                  <div className='text-black text-xl sm:text-3xl md:text-xl lg:text-4xl 2xl:text-6xl font-normal w-[295px] lg:w-[345px] 2xl:w-[445px] text-start font-primary'>Revolutionizing Fall <br></br> Risk Prediction</div>
                   <div className='text-black text-xl  lg:text-5xl md:text-4xl sm:text-3xl 2xl:text-6xl font-normal italic max-w-[389px] text-center'></div>
                   <div className='text-black text-xl  lg:text-5xl md:text-4xl sm:text-3xl 2xl:text-6xl font-normal italic max-w-[389px] text-center'></div>
                   <div className='flex justify-end w-full'>
-                    <div className={`text-black text-xl 2xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl font-normal  max-w-[389px] text-end ${PPEditorialNewSans.className}`}>
-                      by AI-Powered Smart Insoles
+                    <div className={`text-black text-xl 2xl:text-6xl lg:text-4xl md:text-4xl sm:text-3xl font-normal  max-w-[389px] text-end ${PPEditorialNewSans.className}`}>
+                      by AI-Powered <br></br> Smart Insoles
                     </div>
                   </div>
               </div>
               <div className="container mx-auto flex flex-col w-full items-start gap-2 md:gap-3 lg:gap-4 xl:gap-5 2xl:gap-6">
-                <div className="max-w-[480px] font-normal text-black text-xl sm:text-xs md:text-sm lg:text-xl 2xl:text-2xl w-[295px] lg:w-[345px] 2xl:w-[445px]">
-                      Unveiling Our Cutting-Edge Fusion: Our Patent-Pending Bio Sensor Technology Combined with an Advanced Movement Prediction Model
+                <div className="max-w-[480px] font-normal text-black text-xs md:text-sm lg:text-base 2xl:text-2xl w-[395px] lg:w-[345px] 2xl:w-[645px]">
+                      Unveiling Our Cutting-Edge Fusion: <br></br> Our Patent-Pending Bio Sensor  <br></br>Technology Combined with an Advanced <br></br>Movement Prediction Model
                 </div>
                 <button className="bg-primary hover:bg-primary/95 text-white font-bold py-1 px-5 md:py-2 md:px-6 lg:py-3 lg:px-7 2xl:py-4 2xl:px-8 rounded-full text-nowrap gap-10">
                     Join Our Pilot Study!
@@ -71,6 +69,12 @@ const HomeSection = () => {
         </div>
         
       </div>
+
+      
+
+  
+
+ 
     </section>
   )
 }
