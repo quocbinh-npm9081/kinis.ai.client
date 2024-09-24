@@ -11,6 +11,7 @@ interface CirclePosition {
 
 
 interface FeatureItemComponentProps {
+  isFill?:boolean;
   content: string;
   title: string;
   description: string;
@@ -94,6 +95,7 @@ const textParts = (text: string) => {
 };
 
 const FeatureItemComponent = ({
+  isFill = false,
   content, 
   title, 
   description, 
@@ -106,7 +108,7 @@ const FeatureItemComponent = ({
   unoptimized=false}: FeatureItemComponentProps) => {
   return (
     <FeatureItemContainer 
-      className="h-[100vh] feature_item flex-col md:flex-row pl-4 md:pl-36 border-l-[16px] border-black w-full gap-20 md:gap-24 lg:gap-28 xl:gap-32 2xl:gap-36" 
+      className="h-[100vh] feature_item flex-col md:flex-row pl-16 md:pl-24 lg:pl-28 xl:pl-32 2xl:pl-36 border-l-[16px] border-black w-full gap-16 md:gap-20 lg:gap-24 xl:gap-28 2xl:gap-32" 
       initial={{ opacity: 0 }} 
       whileInView={{ opacity: 1 }} 
       transition={{ duration: 1, ease: "easeInOut" }}
@@ -139,16 +141,28 @@ const FeatureItemComponent = ({
         </ul>
       </div>
       <div className={`relative  feature_img w-1/2 h-full flex items-center justify-center ${zIndex ? 'z-50' : ''}`}>
-        <div className="relative feature_img w-full h-full flex items-center justify-center">
-            {img && <Image 
-                        overrideSrc={imgs && imgs}
-                        src={img} alt={title} 
-                        width={200} height={300}
-                        priority
-                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 30vw"
-                        className="object-cover rounded-xl h-auto w-auto" 
-                        unoptimized={unoptimized}
-                    />}
+        <div className="relative feature_img w-full h-[80%] flex items-center justify-center">
+            {img && (
+              isFill ?
+                    <Image 
+                      overrideSrc={imgs && imgs}
+                      src={img} alt={title} 
+                      fill
+                      priority
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 30vw"
+                      className="object-cover h-auto w-auto rounded-xl" 
+                      unoptimized={unoptimized}
+                    /> :     
+                    <Image 
+                      overrideSrc={imgs && imgs}
+                      src={img} alt={title} 
+                      width={200} height={600}
+                      priority
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 30vw"
+                      className="object-cover rounded-xl h-auto w-auto" 
+                      unoptimized={unoptimized} 
+                    />) 
+                  }
 
 
 

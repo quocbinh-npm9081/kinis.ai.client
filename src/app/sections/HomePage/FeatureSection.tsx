@@ -24,7 +24,7 @@ const FeatureSection = () => {
     <section className='bg-white'>
         <div className="container mx-auto py-20">
           <Title title="Smart Insoles, AI, and Expert Care:" subtitle="The Kinis Mobility Ecosystem" className='text-dark text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-[40px]' />
-          <div className="relative flex flex-col items-start mt-20 py-10 gap-10">
+          <div className="relative flex flex-col items-start mt-20 py-10 gap-20">
               <BorderLeft />
               <FeatureItemComponent 
                 content="01" 
@@ -45,8 +45,10 @@ Whether you're walking, climbing stairs, jogging, or performing daily chores, Ki
 " 
                 list={["High-precision sensors record gait, balance, and pressure points", "Continuous data collection during various activities (walking, running, workouts)", "Water-resistant and shock-absorbing design"]} 
                 img="/images/feature_item2.gif"
+                imgs='/images/feature_item23.gif'
                 circlePosition={{top: '38%', left: '27%'}}  
                 zIndex={true}
+                isFill={true}
                 unoptimized={true}
               />
 
