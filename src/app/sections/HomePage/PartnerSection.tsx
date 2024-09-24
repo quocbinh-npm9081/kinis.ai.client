@@ -58,7 +58,7 @@ const PartnerSection = () => {
                 <div className="flex items-start justify-center"> 
                     <Image className="object-cover w-auto h-auto" alt="text_open" src="/images/text_open.png" width={55} height={33}  />
                 </div>
-                <h3 className="text-center text-white text-wrap text-lg md:text-xl lg:text-2xl 2xl:text-4xl font-bold px-5" >Falls are 
+                <h3 className="text-center text-white text-wrap text-lg md:text-xl lg:text-xl 2xl:text-3xl font-bold px-5" >Falls are 
                     <span className="color-signature"> leading cause of injury and injury death</span> among adults ages 65 and over
                 <br/> More than 1 in 4 older adults fall each year leading to</h3>
                 <div className="flex items-end justify-center">
