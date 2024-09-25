@@ -18,7 +18,7 @@ interface ICardTextBasicProps {
 
 const CardTextBasicFullComponent : React.FC<ICardTextBasicProps>= ({title, description, img , infoImg}) => {
   return (
-    <div className='flex flex-row px-10 py-12 max-w-[1404px] max-h-[430px] text-[#23242A] bg-white gap-6 rounded-[10px]'>
+    <div className='flex flex-row px-10 py-12 max-w-[1404px] h-auto text-[#23242A] bg-white gap-6 rounded-[10px]'>
         <div className='flex flex-col gap-6 justify-between'>
           <div className='flex flex-col gap-6 '>
             <div className='font-medium text-2xl md:text-3xl 2xl:text-[44px] leading-7 md:leading-[38.4px] 2xl:leading-[48.4px]'>

@@ -3,8 +3,8 @@ import React from 'react'
 
 const OurTechnologySection = () => {
   return (
-    <section className="relative w-full h-screen bg-white py-36">
-        <div className="container mx-auto flex flex-col md:flex-row w-full h-full gap-8 md:gap-10 2xl:gap-12">
+    <section className="relative w-full h-auto bg-white py-36">
+        <div className="container mx-auto flex flex-col items-center justify-center md:flex-row w-full h-full gap-4 md:gap-6 lg:gap-8 xl:gap-10 2xl:gap-12">
         <CardOurTechnologyComponent 
             img='/images/our_technology_item1.png' 
             typography='Patent-Pending Proprietary Biosensor Technology: '
