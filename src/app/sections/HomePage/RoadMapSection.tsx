@@ -6,7 +6,7 @@ const RoadMapSection = () => {
     <section 
       className='flex flex-col items-center justify-start h-[120vh] w-screen py-28 bg-white'
     >
-      <div className='relative w-[90%] h-[636px]'>
+      <div className='relative w-[90%] h-[70%]'>
         <Image src='/images/Frame.png' alt='roadmap' fill className='object-fill w-auto h-auto'/>
       </div>
        
